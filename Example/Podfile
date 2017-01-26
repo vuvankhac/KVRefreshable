@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'KVRefreshable_Example' do
+  pod 'KVRefreshable', :path => '../'
+
+  target 'KVRefreshable_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

@@ -1,0 +1,6 @@
+framework module KVRefreshable {
+  umbrella header "KVRefreshable-umbrella.h"
+
+  export *
+  module * { export * }
+}

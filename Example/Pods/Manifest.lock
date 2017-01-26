@@ -1,0 +1,16 @@
+PODS:
+  - KVRefreshable (0.1)
+
+DEPENDENCIES:
+  - KVRefreshable (from `../`)
+
+EXTERNAL SOURCES:
+  KVRefreshable:
+    :path: ../
+
+SPEC CHECKSUMS:
+  KVRefreshable: 84830a7dd33c098d719e4b2dc2910e2dd019ef4c
+
+PODFILE CHECKSUM: b6b71b26534d486d320c30e1ca971f305dafbcd4
+
+COCOAPODS: 1.1.1
