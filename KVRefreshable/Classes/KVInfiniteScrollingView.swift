@@ -35,8 +35,8 @@ public class KVInfiniteScrollingView: UIView {
         return activityIndicatorView
     }()
     
-    var previousState: KVInfiniteScrollingState = .stopped
-    var state: KVInfiniteScrollingState = .stopped {
+    var previousState: KVState = .stopped
+    var state: KVState = .stopped {
         willSet {
             self.previousState = self.state
         }
@@ -99,17 +99,23 @@ public class KVInfiniteScrollingView: UIView {
     }
     
     func resetScrollViewContentInset() {
-        if var currentInsets = self.scrollView?.contentInset {
-            currentInsets.bottom = self.originalBottomInset
-            self.setScrollViewContentInset(currentInsets)
+        guard let scrollView = self.scrollView else {
+            return
         }
+        
+        var currentInsets = scrollView.contentInset
+        currentInsets.bottom = self.originalBottomInset
+        self.setScrollViewContentInset(currentInsets)
     }
     
     func setScrollViewContentInsetForInfiniteScrolling() {
-        if var currentInsets = self.scrollView?.contentInset {
-            currentInsets.bottom = self.originalBottomInset + 60
-            self.setScrollViewContentInset(currentInsets)
+        guard let scrollView = self.scrollView else {
+            return
         }
+        
+        var currentInsets = scrollView.contentInset
+        currentInsets.bottom = self.originalBottomInset + 60
+        self.setScrollViewContentInset(currentInsets)
     }
     
     func setScrollViewContentInset(_ contentInset: UIEdgeInsets) {

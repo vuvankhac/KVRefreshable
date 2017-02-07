@@ -13,12 +13,15 @@
 		382CECADA0C744CC93C9171C941C7F4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
 		4ABCF331734C2E6982EBFA91955C7955 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
 		535AAC75CB643A5E2168254346925993 /* KVRefreshable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3ECEB96CC9546BB10B1AF1D2BA7FBC /* KVRefreshable-dummy.m */; };
-		5E522EBE6F5C930C9E665D880F0DFBE8 /* KVConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DDB91E1407CC4D731D8911CB435C85 /* KVConstants.swift */; };
 		65E85F3CE8AA9A036FC8D37566D998B8 /* Pods-KVRefreshable_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A16366A1ACC55BA8A066E083EF780312 /* Pods-KVRefreshable_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67D8741B98AB87E9DF9ABF7DFF87C278 /* Pods-KVRefreshable_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A4133E8CE39EE0A43FFEE144F69D3C /* Pods-KVRefreshable_Tests-dummy.m */; };
 		8AD81901C6D05810FA14F93A02C7D967 /* Pods-KVRefreshable_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D434C4E25EE8CBA2D5C7A995375C8619 /* Pods-KVRefreshable_Example-dummy.m */; };
-		D27381A4567D86548D88EB2E41FA9F7C /* KVInfiniteScrollingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1986B3DC398A9CB85B4EBC16D8BCB36 /* KVInfiniteScrollingView.swift */; };
-		D47CC8A718BFEF3DF4BE3000D36D5127 /* UIScrollView+KVInfiniteScrolling.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38BA5202CB41083A82986810A4895F /* UIScrollView+KVInfiniteScrolling.swift */; };
+		C4087C571E4963B3001D7769 /* KVConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4087C511E4963B3001D7769 /* KVConstants.swift */; };
+		C4087C581E4963B3001D7769 /* KVInfiniteScrollingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4087C521E4963B3001D7769 /* KVInfiniteScrollingView.swift */; };
+		C4087C591E4963B3001D7769 /* KVPullToRefreshArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4087C531E4963B3001D7769 /* KVPullToRefreshArrow.swift */; };
+		C4087C5A1E4963B3001D7769 /* KVPullToRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4087C541E4963B3001D7769 /* KVPullToRefreshView.swift */; };
+		C4087C5B1E4963B3001D7769 /* UIScrollView+KVInfiniteScrolling.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4087C551E4963B3001D7769 /* UIScrollView+KVInfiniteScrolling.swift */; };
+		C4087C5C1E4963B3001D7769 /* UIScrollView+KVPullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4087C561E4963B3001D7769 /* UIScrollView+KVPullToRefresh.swift */; };
 		D4F522358346F12A10DCA0D32FFF160C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,32 +42,35 @@
 		226773B410B9A913932578F6EA616209 /* Pods-KVRefreshable_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KVRefreshable_Example-frameworks.sh"; sourceTree = "<group>"; };
 		23CD103B90DADAE8B91D4F47ECAE1DE6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A3ECEB96CC9546BB10B1AF1D2BA7FBC /* KVRefreshable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KVRefreshable-dummy.m"; sourceTree = "<group>"; };
-		359A97AE05244075FF86F6AE0917C18B /* KVRefreshable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KVRefreshable.framework; path = KVRefreshable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		359A97AE05244075FF86F6AE0917C18B /* KVRefreshable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KVRefreshable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51F765E5AF55F7A019E18793D52E74CB /* KVRefreshable-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KVRefreshable-prefix.pch"; sourceTree = "<group>"; };
-		5D2B4133EDBB90FB5AE7C37FF79A71A6 /* Pods-KVRefreshable_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-KVRefreshable_Tests.modulemap"; sourceTree = "<group>"; };
-		5D5316350DF63914EFDB8F3B1BEFA9A1 /* Pods_KVRefreshable_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KVRefreshable_Tests.framework; path = "Pods-KVRefreshable_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D2B4133EDBB90FB5AE7C37FF79A71A6 /* Pods-KVRefreshable_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KVRefreshable_Tests.modulemap"; sourceTree = "<group>"; };
+		5D5316350DF63914EFDB8F3B1BEFA9A1 /* Pods_KVRefreshable_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KVRefreshable_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		680D240526252A627ADEE79CC2801CDE /* Pods_KVRefreshable_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KVRefreshable_Example.framework; path = "Pods-KVRefreshable_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		680D240526252A627ADEE79CC2801CDE /* Pods_KVRefreshable_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KVRefreshable_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70A4133E8CE39EE0A43FFEE144F69D3C /* Pods-KVRefreshable_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KVRefreshable_Tests-dummy.m"; sourceTree = "<group>"; };
 		758F55F5FEAB71940C23C0B3CEB710FA /* Pods-KVRefreshable_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KVRefreshable_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		75DDB91E1407CC4D731D8911CB435C85 /* KVConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KVConstants.swift; sourceTree = "<group>"; };
 		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		8707D68B12002BA547A930CA1B821BDB /* Pods-KVRefreshable_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KVRefreshable_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		87083F6F46F1845FB6641A421538A759 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8BDE34C2C8DC48242AC3323AF4127860 /* KVRefreshable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KVRefreshable.modulemap; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8BDE34C2C8DC48242AC3323AF4127860 /* KVRefreshable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KVRefreshable.modulemap; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9D502E98FE9A67AFA06100839644849A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A16366A1ACC55BA8A066E083EF780312 /* Pods-KVRefreshable_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KVRefreshable_Example-umbrella.h"; sourceTree = "<group>"; };
 		AC0BA0D9C0078AF48438EA939E68A00A /* Pods-KVRefreshable_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KVRefreshable_Example.release.xcconfig"; sourceTree = "<group>"; };
-		B1986B3DC398A9CB85B4EBC16D8BCB36 /* KVInfiniteScrollingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KVInfiniteScrollingView.swift; sourceTree = "<group>"; };
 		B7C3B1BB9ABC4CE99B400906265B2C7F /* Pods-KVRefreshable_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KVRefreshable_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		C4087C511E4963B3001D7769 /* KVConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KVConstants.swift; sourceTree = "<group>"; };
+		C4087C521E4963B3001D7769 /* KVInfiniteScrollingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KVInfiniteScrollingView.swift; sourceTree = "<group>"; };
+		C4087C531E4963B3001D7769 /* KVPullToRefreshArrow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KVPullToRefreshArrow.swift; sourceTree = "<group>"; };
+		C4087C541E4963B3001D7769 /* KVPullToRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KVPullToRefreshView.swift; sourceTree = "<group>"; };
+		C4087C551E4963B3001D7769 /* UIScrollView+KVInfiniteScrolling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+KVInfiniteScrolling.swift"; sourceTree = "<group>"; };
+		C4087C561E4963B3001D7769 /* UIScrollView+KVPullToRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+KVPullToRefresh.swift"; sourceTree = "<group>"; };
 		D434C4E25EE8CBA2D5C7A995375C8619 /* Pods-KVRefreshable_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KVRefreshable_Example-dummy.m"; sourceTree = "<group>"; };
 		D8DAE45567B1E5DA5447337F90B7DF80 /* Pods-KVRefreshable_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KVRefreshable_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DE38BA5202CB41083A82986810A4895F /* UIScrollView+KVInfiniteScrolling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIScrollView+KVInfiniteScrolling.swift"; sourceTree = "<group>"; };
 		DF24B4B7087A48E9DF42B33DCAD8221F /* Pods-KVRefreshable_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KVRefreshable_Example-resources.sh"; sourceTree = "<group>"; };
 		EA3C8139BC9D633D934AD64A23151527 /* Pods-KVRefreshable_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KVRefreshable_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EB02EA9549C1B64B36147BC276FCEF41 /* Pods-KVRefreshable_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KVRefreshable_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		ED49F41D9CF684841DA19A4D28B1B57B /* Pods-KVRefreshable_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-KVRefreshable_Example.modulemap"; sourceTree = "<group>"; };
+		ED49F41D9CF684841DA19A4D28B1B57B /* Pods-KVRefreshable_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KVRefreshable_Example.modulemap"; sourceTree = "<group>"; };
 		F3DC10D8802844E1FFF915CF9022EDB7 /* Pods-KVRefreshable_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KVRefreshable_Tests-umbrella.h"; sourceTree = "<group>"; };
 		F431BF638F7B0FAAE2ACE94471E069EC /* KVRefreshable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KVRefreshable-umbrella.h"; sourceTree = "<group>"; };
 		F9C1536C5C541D349AFC3070BA14D9C2 /* Pods-KVRefreshable_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KVRefreshable_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -102,11 +108,13 @@
 		1EAF54A5D8171CE611CE9BA3CFA352DB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				75DDB91E1407CC4D731D8911CB435C85 /* KVConstants.swift */,
-				B1986B3DC398A9CB85B4EBC16D8BCB36 /* KVInfiniteScrollingView.swift */,
-				DE38BA5202CB41083A82986810A4895F /* UIScrollView+KVInfiniteScrolling.swift */,
+				C4087C511E4963B3001D7769 /* KVConstants.swift */,
+				C4087C521E4963B3001D7769 /* KVInfiniteScrollingView.swift */,
+				C4087C531E4963B3001D7769 /* KVPullToRefreshArrow.swift */,
+				C4087C541E4963B3001D7769 /* KVPullToRefreshView.swift */,
+				C4087C551E4963B3001D7769 /* UIScrollView+KVInfiniteScrolling.swift */,
+				C4087C561E4963B3001D7769 /* UIScrollView+KVPullToRefresh.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -212,7 +220,6 @@
 			children = (
 				1EAF54A5D8171CE611CE9BA3CFA352DB /* Classes */,
 			);
-			name = KVRefreshable;
 			path = KVRefreshable;
 			sourceTree = "<group>";
 		};
@@ -324,6 +331,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					2FBD8066500CAC1D7742181F79B96FAE = {
+						LastSwiftMigration = 0820;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -365,10 +377,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E522EBE6F5C930C9E665D880F0DFBE8 /* KVConstants.swift in Sources */,
-				D27381A4567D86548D88EB2E41FA9F7C /* KVInfiniteScrollingView.swift in Sources */,
+				C4087C5C1E4963B3001D7769 /* UIScrollView+KVPullToRefresh.swift in Sources */,
+				C4087C5B1E4963B3001D7769 /* UIScrollView+KVInfiniteScrolling.swift in Sources */,
+				C4087C5A1E4963B3001D7769 /* KVPullToRefreshView.swift in Sources */,
+				C4087C591E4963B3001D7769 /* KVPullToRefreshArrow.swift in Sources */,
+				C4087C571E4963B3001D7769 /* KVConstants.swift in Sources */,
+				C4087C581E4963B3001D7769 /* KVInfiniteScrollingView.swift in Sources */,
 				535AAC75CB643A5E2168254346925993 /* KVRefreshable-dummy.m in Sources */,
-				D47CC8A718BFEF3DF4BE3000D36D5127 /* UIScrollView+KVInfiniteScrolling.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +508,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0A4C7B731D066292CD0E927AB647D475 /* KVRefreshable.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -645,6 +661,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0A4C7B731D066292CD0E927AB647D475 /* KVRefreshable.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";

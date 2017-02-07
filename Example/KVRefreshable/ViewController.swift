@@ -19,6 +19,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         allObjects = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+        
+        tableView.addPullToRefreshWithActionHandler {
+            let when = DispatchTime.now() + 2
+            DispatchQueue.main.asyncAfter(deadline: when) {
+                self.tableView.beginUpdates()
+                self.allObjects.append("")
+                self.tableView.insertRows(at: [IndexPath(row: 0, section: 0)], with: .bottom)
+                self.tableView.endUpdates()
+                self.tableView.pullToRefreshView?.stopAnimating()
+            }
+        }
+        
         tableView.addInfiniteScrollingWithActionHandler {
             let when = DispatchTime.now() + 2
             DispatchQueue.main.asyncAfter(deadline: when) {
