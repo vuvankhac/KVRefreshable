@@ -18,10 +18,10 @@ public class KVPullToRefreshView: UIView {
     var showsPullToRefresh: Bool = true
     var observing: Bool = false
     
-    var arrowColor: UIColor = .gray
-    var textColor: UIColor = .darkGray
+    public var arrowColor: UIColor = .gray
+    public var textColor: UIColor = .darkGray
     
-    lazy var titleLabel: UILabel = {
+    private lazy var titleLabel: UILabel = {
         let titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 210, height: 20))
         titleLabel.text = "Pull to refresh..."
         titleLabel.font = UIFont.boldSystemFont(ofSize: 14)
@@ -32,7 +32,7 @@ public class KVPullToRefreshView: UIView {
         return titleLabel
     }()
     
-    lazy var subtitleLabel: UILabel = {
+    private lazy var subtitleLabel: UILabel = {
         let subtitleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 210, height: 20))
         subtitleLabel.font = UIFont.boldSystemFont(ofSize: 12)
         subtitleLabel.backgroundColor = .clear
@@ -42,7 +42,7 @@ public class KVPullToRefreshView: UIView {
         return subtitleLabel
     }()
     
-    var activityIndicatorViewColor: UIColor {
+    public var activityIndicatorViewColor: UIColor {
         get {
             guard let color = self.activityIndicatorView.color else {
                 return .gray
@@ -56,7 +56,23 @@ public class KVPullToRefreshView: UIView {
         }
     }
     
-    var activityIndicatorViewStyle: UIActivityIndicatorViewStyle = .gray
+    public var activityIndicatorViewStyle: UIActivityIndicatorViewStyle {
+        get {
+            return self.activityIndicatorView.activityIndicatorViewStyle
+        }
+        
+        set {
+            self.activityIndicatorView.activityIndicatorViewStyle = newValue
+        }
+    }
+    
+    private lazy var activityIndicatorView: UIActivityIndicatorView = {
+        let activityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+        activityIndicatorView.hidesWhenStopped = true
+        self.addSubview(activityIndicatorView)
+        
+        return activityIndicatorView
+    }()
     
     var previousState: KVState = .stopped
     var state: KVState = .stopped {
@@ -84,16 +100,7 @@ public class KVPullToRefreshView: UIView {
         }
     }
     
-    lazy var dateFormatter: DateFormatter = {
-        let dateFormatter: DateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .short
-        dateFormatter.timeStyle = .short
-        dateFormatter.locale = .current
-        
-        return dateFormatter
-    }()
-    
-    lazy var arrow: KVPullToRefreshArrow = {
+    private lazy var arrow: KVPullToRefreshArrow = {
         let arrow = KVPullToRefreshArrow(frame: CGRect(x: 0, y: self.bounds.size.height - 54, width: 22, height: 48))
         arrow.backgroundColor = .clear
         self.addSubview(arrow)
@@ -101,16 +108,8 @@ public class KVPullToRefreshView: UIView {
         return arrow
     }()
     
-    lazy var activityIndicatorView: UIActivityIndicatorView = {
-        let activityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
-        activityIndicatorView.hidesWhenStopped = true
-        self.addSubview(activityIndicatorView)
-        
-        return activityIndicatorView
-    }()
-    
-    var titles: [String] = [String]()
-    var subtitles: [String] = [String]()
+    private var titles: [String] = [String]()
+    private var subtitles: [String] = [String]()
     
     override init(frame: CGRect) {
         super.init(frame: frame)

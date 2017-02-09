@@ -17,6 +17,20 @@ public class KVInfiniteScrollingView: UIView {
     var enabled: Bool = true
     var observing: Bool = false
     
+    public var activityIndicatorViewColor: UIColor {
+        get {
+            guard let color = self.activityIndicatorView.color else {
+                return .gray
+            }
+            
+            return color
+        }
+        
+        set {
+            self.activityIndicatorView.color = newValue
+        }
+    }
+    
     public var activityIndicatorViewStyle: UIActivityIndicatorViewStyle {
         get {
             return self.activityIndicatorView.activityIndicatorViewStyle
