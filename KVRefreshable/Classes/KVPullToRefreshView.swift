@@ -145,7 +145,7 @@ public class KVPullToRefreshView: UIView {
             self.rotateArrow(0, hide: false)
             
         case .triggered:
-            self.rotateArrow(Float(M_PI), hide: false)
+            self.rotateArrow(Float.pi, hide: false)
             
         case .loading:
             self.activityIndicatorView.startAnimating()
@@ -208,7 +208,7 @@ public class KVPullToRefreshView: UIView {
             return
         }
         
-        if fabs(scrollView.contentOffset.y) < CGFloat(FLT_EPSILON) {
+        if fabs(scrollView.contentOffset.y) < CGFloat.ulpOfOne {
             scrollView.setContentOffset(CGPoint(x: scrollView.contentOffset.x, y: -self.frame.size.height), animated: true)
             self.wasTriggeredByUser = false
         } else {
