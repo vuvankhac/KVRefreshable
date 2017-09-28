@@ -58,7 +58,7 @@ extension UIScrollView {
         }
     }
     
-    public func addInfiniteScrollingWithActionHandler(_ actionHandler: @escaping (_: Void) -> Void) {
+    public func addInfiniteScrollingWithActionHandler(_ actionHandler: @escaping () -> Void) {
         if self.infiniteScrollingView == nil {
             let view = KVInfiniteScrollingView(frame: CGRect(x: 0, y: self.contentSize.height, width: self.bounds.size.width, height: 60))
             view.infiniteScrollingHandler = actionHandler

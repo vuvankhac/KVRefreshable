@@ -64,7 +64,7 @@ extension UIScrollView {
         }
     }
     
-    public func addPullToRefreshWithActionHandler(_ actionHandler: @escaping (_: Void) -> Void) {
+    public func addPullToRefreshWithActionHandler(_ actionHandler: @escaping () -> Void) {
         if self.pullToRefreshView == nil {
             let view = KVPullToRefreshView(frame: CGRect(x: 0, y: -60, width: self.bounds.size.width, height: 60))
             view.pullToRefreshHandler = actionHandler

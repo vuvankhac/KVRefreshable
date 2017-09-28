@@ -10,7 +10,7 @@ import UIKit
 
 public class KVPullToRefreshView: UIView {
 
-    var pullToRefreshHandler: ((_: Void) -> Void)?
+    var pullToRefreshHandler: (() -> Void)?
     
     weak var scrollView: UIScrollView?
     var originalTopInset: CGFloat = 0

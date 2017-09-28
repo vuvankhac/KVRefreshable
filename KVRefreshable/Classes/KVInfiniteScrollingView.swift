@@ -10,7 +10,7 @@ import UIKit
 
 public class KVInfiniteScrollingView: UIView {
 
-    var infiniteScrollingHandler: ((_: Void) -> Void)?
+    var infiniteScrollingHandler: (() -> Void)?
     
     weak var scrollView: UIScrollView?
     var originalBottomInset: CGFloat = 0.0
