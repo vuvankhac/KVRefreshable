@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KVRefreshable'
-  s.version          = '1.4'
+  s.version          = '1.5'
   s.summary          = 'KVRefreshable.'
 
 # This description is used to generate tags and improve search results.

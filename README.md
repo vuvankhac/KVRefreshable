@@ -20,7 +20,8 @@ KVRefreshable is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'KVRefreshable', '~> 1.4'
+# For Swift 4.2
+pod 'KVRefreshable', '~> 1.5'
 ```
 
 ## Usage
@@ -64,9 +65,9 @@ tableView.showsInfiniteScrolling = true
 
 ## Author
 
-Vu Van Khac, khacvv0451@gmail.com <br />
-My Facebook: https://www.facebook.com/vuvankhac.official  <br />
-My Twitter: https://twitter.com/vuvankhac  <br />
+Vu Van Khac, khacvv0451@gmail.com<br/>
+My Facebook: https://www.facebook.com/vuvankhac.official<br/>
+My Twitter: https://twitter.com/vuvankhac<br/>
 
 ## License
 

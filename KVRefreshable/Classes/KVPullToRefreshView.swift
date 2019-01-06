@@ -158,7 +158,7 @@ public class KVPullToRefreshView: UIView {
         
         self.titleLabel.text = self.titles[self.state.value()]
         let subtitle = self.subtitles[self.state.value()]
-        self.subtitleLabel.text = subtitle.characters.count > 0 ? subtitle : nil
+        self.subtitleLabel.text = subtitle.count > 0 ? subtitle : nil
         
         let titleSize: CGSize = self.titleLabel.intrinsicContentSize
         let subtitleSize: CGSize = self.subtitleLabel.intrinsicContentSize
@@ -300,5 +300,4 @@ public class KVPullToRefreshView: UIView {
             scrollView.contentInset = UIEdgeInsetsMake(offset, contentInset.left, contentInset.bottom, contentInset.right)
         }
     }
-    
 }
