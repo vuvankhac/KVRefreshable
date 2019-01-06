@@ -40,9 +40,14 @@ tableView.triggerPullToRefresh()
 ```
 
 
-Hide the pull to refresh view
+Show the pull to refresh view
 ```swift
 tableView.showsPullToRefresh = true
+```
+
+Hide the pull to refresh view
+```swift
+tableView.showsPullToRefresh = false
 ```
 
 Adding infinite scrolling
@@ -58,9 +63,14 @@ Trigger the infinite scrolling
 tableView.triggerPullToRefresh()
 ```
 
-Hide the infinite scrolling view
+Show the infinite scrolling view
 ```swift
 tableView.showsInfiniteScrolling = true
+```
+
+Hide the infinite scrolling view
+```swift
+tableView.showsInfiniteScrolling = false
 ```
 
 ## Author
