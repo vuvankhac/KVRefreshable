@@ -31,18 +31,18 @@ public class KVInfiniteScrollingView: UIView {
         }
     }
     
-    public var activityIndicatorViewStyle: UIActivityIndicatorViewStyle {
+    public var activityIndicatorViewStyle: UIActivityIndicatorView.Style {
         get {
-            return self.activityIndicatorView.activityIndicatorViewStyle
+            return self.activityIndicatorView.style
         }
         
         set {
-            self.activityIndicatorView.activityIndicatorViewStyle = newValue
+            self.activityIndicatorView.style = newValue
         }
     }
     
     lazy var activityIndicatorView: UIActivityIndicatorView = {
-        let activityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+        let activityIndicatorView = UIActivityIndicatorView(style: .gray)
         activityIndicatorView.hidesWhenStopped = true
         self.addSubview(activityIndicatorView)
         

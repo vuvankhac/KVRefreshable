@@ -56,18 +56,18 @@ public class KVPullToRefreshView: UIView {
         }
     }
     
-    public var activityIndicatorViewStyle: UIActivityIndicatorViewStyle {
+    public var activityIndicatorViewStyle: UIActivityIndicatorView.Style {
         get {
-            return self.activityIndicatorView.activityIndicatorViewStyle
+            return self.activityIndicatorView.style
         }
         
         set {
-            self.activityIndicatorView.activityIndicatorViewStyle = newValue
+            self.activityIndicatorView.style = newValue
         }
     }
     
     private lazy var activityIndicatorView: UIActivityIndicatorView = {
-        let activityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+        let activityIndicatorView = UIActivityIndicatorView(style: .gray)
         activityIndicatorView.hidesWhenStopped = true
         self.addSubview(activityIndicatorView)
         
@@ -208,7 +208,7 @@ public class KVPullToRefreshView: UIView {
             return
         }
         
-        if fabs(scrollView.contentOffset.y) < CGFloat.ulpOfOne {
+        if abs(scrollView.contentOffset.y) < CGFloat.ulpOfOne {
             scrollView.setContentOffset(CGPoint(x: scrollView.contentOffset.x, y: -self.frame.size.height), animated: true)
             self.wasTriggeredByUser = false
         } else {
@@ -297,7 +297,7 @@ public class KVPullToRefreshView: UIView {
             var offset: CGFloat = max(-scrollView.contentOffset.y, 0)
             offset = min(offset, self.originalTopInset + self.bounds.size.height)
             let contentInset: UIEdgeInsets = scrollView.contentInset
-            scrollView.contentInset = UIEdgeInsetsMake(offset, contentInset.left, contentInset.bottom, contentInset.right)
+            scrollView.contentInset = UIEdgeInsets(top: offset, left: contentInset.left, bottom: contentInset.bottom, right: contentInset.right)
         }
     }
 }

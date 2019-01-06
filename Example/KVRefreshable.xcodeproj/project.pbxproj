@@ -215,12 +215,10 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = L2D8T53573;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = L2D8T53573;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -515,7 +513,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = L2D8T53573;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = KVRefreshable/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -533,7 +531,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = L2D8T53573;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = KVRefreshable/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -549,7 +547,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9B970C76DDBEE0B566FA76A1 /* Pods-KVRefreshable_Tests.debug.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = L2D8T53573;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -568,7 +566,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FE2FA4D039227D1ADFB82990 /* Pods-KVRefreshable_Tests.release.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = L2D8T53573;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
