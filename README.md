@@ -21,7 +21,7 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 # For Swift 4.2
-pod 'KVRefreshable', '~> 1.5'
+pod 'KVRefreshable', '~> 1.6'
 ```
 
 ## Usage
