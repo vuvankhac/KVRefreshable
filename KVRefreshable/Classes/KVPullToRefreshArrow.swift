@@ -35,8 +35,8 @@ class KVPullToRefreshArrow: UIView {
             let alphaGradientLocations: [CGFloat] = [0, 0.8]
             var alphaGradient: CGGradient?
             
-            var components: [CGFloat] = self.arrowColor.cgColor.components!
-            let numComponents: size_t = self.arrowColor.cgColor.numberOfComponents
+            var components: [CGFloat] = arrowColor.cgColor.components!
+            let numComponents: size_t = arrowColor.cgColor.numberOfComponents
             var colors = [CGFloat](repeating: 0.0, count: 8)
             
             switch numComponents {
@@ -63,10 +63,18 @@ class KVPullToRefreshArrow: UIView {
             colors[3] = 0
             colors[7] = 1
             
+            if arrowColor == .clear {
+                var newColors = [CGFloat]()
+                for _ in colors {
+                    newColors.append(0)
+                }
+                
+                colors = newColors
+            }
+            
             alphaGradient = CGGradient(colorSpace: colorSpace, colorComponents: colors, locations: alphaGradientLocations, count: 2)
             c.drawLinearGradient(alphaGradient!, start: CGPoint.zero, end: CGPoint(x: 0, y: rect.size.height), options: CGGradientDrawingOptions(rawValue: 0))
             c.restoreGState()
         }
     }
-
 }

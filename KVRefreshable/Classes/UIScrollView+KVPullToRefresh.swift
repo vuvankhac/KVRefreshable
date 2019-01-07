@@ -30,7 +30,7 @@ extension UIScrollView {
     
     public var showsPullToRefresh: Bool {
         get {
-            guard let pullToRefreshView = self.pullToRefreshView else {
+            guard let pullToRefreshView = pullToRefreshView else {
                 return false
             }
             
@@ -38,7 +38,7 @@ extension UIScrollView {
         }
         
         set {
-            guard let pullToRefreshView = self.pullToRefreshView else {
+            guard let pullToRefreshView = pullToRefreshView else {
                 return
             }
             
@@ -46,39 +46,55 @@ extension UIScrollView {
             
             if !newValue {
                 if pullToRefreshView.observing {
-                    self.removeObserver(pullToRefreshView, forKeyPath: "contentOffset")
-                    self.removeObserver(pullToRefreshView, forKeyPath: "contentSize")
-                    self.removeObserver(pullToRefreshView, forKeyPath: "frame")
+                    removeObserver(pullToRefreshView, forKeyPath: "contentOffset")
+                    removeObserver(pullToRefreshView, forKeyPath: "contentSize")
+                    removeObserver(pullToRefreshView, forKeyPath: "frame")
                     pullToRefreshView.resetScrollViewContentInset()
                     pullToRefreshView.observing = false
                 }
             } else {
                 if !pullToRefreshView.observing {
-                    self.addObserver(pullToRefreshView, forKeyPath: "contentOffset", options: .new, context: nil)
-                    self.addObserver(pullToRefreshView, forKeyPath: "contentSize", options: .new, context: nil)
-                    self.addObserver(pullToRefreshView, forKeyPath: "frame", options: .new, context: nil)
+                    addObserver(pullToRefreshView, forKeyPath: "contentOffset", options: .new, context: nil)
+                    addObserver(pullToRefreshView, forKeyPath: "contentSize", options: .new, context: nil)
+                    addObserver(pullToRefreshView, forKeyPath: "frame", options: .new, context: nil)
                     pullToRefreshView.observing = true
-                    pullToRefreshView.frame = CGRect(x: 0, y: -60, width: self.bounds.size.width, height: 60)
+                    pullToRefreshView.frame = CGRect(x: 0, y: -60, width: bounds.size.width, height: 60)
                 }
             }
         }
     }
     
-    public func addPullToRefreshWithActionHandler(_ actionHandler: @escaping () -> Void) {
-        if self.pullToRefreshView == nil {
-            let view = KVPullToRefreshView(frame: CGRect(x: 0, y: -60, width: self.bounds.size.width, height: 60))
+    public func addPullToRefreshWithActionHandler(_ actionHandler: @escaping () -> Void, withConfig: () -> Void) {
+        if pullToRefreshView == nil {
+            let view = KVPullToRefreshView(frame: CGRect(x: 0, y: -60, width: bounds.size.width, height: 60))
             view.pullToRefreshHandler = actionHandler
             view.scrollView = self
-            self.addSubview(view)
-            view.originalTopInset = self.contentInset.top
-            self.pullToRefreshView = view
-            self.showsPullToRefresh = true
+            view.originalTopInset = contentInset.top
+            addSubview(view)
+            pullToRefreshView = view
+            showsPullToRefresh = true
         }
+        
+        withConfig()
     }
     
     public func triggerPullToRefresh() {
-        self.pullToRefreshView?.state = .triggered
-        self.pullToRefreshView?.startAnimating()
+        let lastTitleTextColor = pullToRefreshView?.titleTextColor ?? .darkGray
+        let lastSubtitleTextColor = pullToRefreshView?.subtitleTextColor ?? .darkGray
+        let lastActivityIndicatorViewColor = pullToRefreshView?.activityIndicatorViewColor ?? .gray
+        pullToRefreshView?.arrow.layer.opacity = 0
+        pullToRefreshView?.titleTextColor = .clear
+        pullToRefreshView?.subtitleTextColor = .clear
+        pullToRefreshView?.activityIndicatorViewColor = .clear
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) { [weak self] in
+            guard let weakSelf = self else { return }
+            weakSelf.pullToRefreshView?.titleTextColor = lastTitleTextColor
+            weakSelf.pullToRefreshView?.subtitleTextColor = lastSubtitleTextColor
+            weakSelf.pullToRefreshView?.activityIndicatorViewColor = lastActivityIndicatorViewColor
+        }
+        
+        pullToRefreshView?.isFirstTrigger = true
+        pullToRefreshView?.state = .triggered
+        pullToRefreshView?.startAnimating()
     }
-    
 }

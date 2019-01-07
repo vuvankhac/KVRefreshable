@@ -7,19 +7,17 @@
 //
 
 public enum KVState {
+    case stopped
     case triggered
     case loading
-    case stopped
     
     func value() -> Int {
         switch self {
-        case .triggered:
-            return 0
-            
-        case .loading:
-            return 1
-            
         case .stopped:
+            return 0
+        case .triggered:
+            return 1
+        case .loading:
             return 2
         }
     }

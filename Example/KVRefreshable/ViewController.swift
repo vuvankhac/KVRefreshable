@@ -17,10 +17,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         allObjects = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
-        
-        tableView.addPullToRefreshWithActionHandler {
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        tableView.addPullToRefreshWithActionHandler({
             let when = DispatchTime.now() + 2
             DispatchQueue.main.asyncAfter(deadline: when) {
                 self.tableView.beginUpdates()
@@ -29,7 +31,10 @@ class ViewController: UIViewController {
                 self.tableView.endUpdates()
                 self.tableView.pullToRefreshView?.stopAnimating()
             }
-        }
+        }, withConfig: { [weak self] in
+            guard let weakSelf = self else { return }
+            weakSelf.tableView.pullToRefreshView?.arrowColor = .black
+        })
         
         tableView.addInfiniteScrollingWithActionHandler {
             let when = DispatchTime.now() + 2
@@ -41,6 +46,8 @@ class ViewController: UIViewController {
                 self.tableView.infiniteScrollingView?.stopAnimating()
             }
         }
+        
+        tableView.triggerPullToRefresh()
     }
 
     override func didReceiveMemoryWarning() {
