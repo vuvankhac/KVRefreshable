@@ -44,7 +44,7 @@ public class KVInfiniteScrollingView: UIView {
     lazy var activityIndicatorView: UIActivityIndicatorView = {
         let activityIndicatorView = UIActivityIndicatorView(style: .gray)
         activityIndicatorView.hidesWhenStopped = true
-        self.addSubview(activityIndicatorView)
+        addSubview(activityIndicatorView)
         
         return activityIndicatorView
     }()
@@ -79,8 +79,7 @@ public class KVInfiniteScrollingView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
-        self.autoresizingMask = .flexibleWidth
+        autoresizingMask = .flexibleWidth
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -88,48 +87,48 @@ public class KVInfiniteScrollingView: UIView {
     }
     
     public func startAnimating() {
-        self.state = .loading
+        state = .loading
     }
     
     public func stopAnimating() {
-        self.state = .stopped
+        state = .stopped
     }
     
     override public func willMove(toSuperview newSuperview: UIView?) {
         if (self.superview != nil) && newSuperview == nil {
             let scrollView: UIScrollView? = (self.superview as? UIScrollView)
             if let showsInfiniteScrolling = scrollView?.showsInfiniteScrolling, showsInfiniteScrolling == true {
-                if self.observing {
+                if observing {
                     scrollView?.removeObserver(self, forKeyPath: "contentOffset")
                     scrollView?.removeObserver(self, forKeyPath: "contentSize")
-                    self.observing = false
+                    observing = false
                 }
             }
         }
     }
     
     override public func layoutSubviews() {
-        self.activityIndicatorView.center = CGPoint(x: self.bounds.size.width / 2, y: self.bounds.size.height / 2)
+        activityIndicatorView.center = CGPoint(x: bounds.size.width / 2.0, y: bounds.size.height / 2.0)
     }
     
     func resetScrollViewContentInset() {
-        guard let scrollView = self.scrollView else {
+        guard let scrollView = scrollView else {
             return
         }
         
         var currentInsets = scrollView.contentInset
-        currentInsets.bottom = self.originalBottomInset
-        self.setScrollViewContentInset(currentInsets)
+        currentInsets.bottom = originalBottomInset
+        setScrollViewContentInset(currentInsets)
     }
     
     func setScrollViewContentInsetForInfiniteScrolling() {
-        guard let scrollView = self.scrollView else {
+        guard let scrollView = scrollView else {
             return
         }
         
         var currentInsets = scrollView.contentInset
-        currentInsets.bottom = self.originalBottomInset + 60
-        self.setScrollViewContentInset(currentInsets)
+        currentInsets.bottom = originalBottomInset + 60
+        setScrollViewContentInset(currentInsets)
     }
     
     func setScrollViewContentInset(_ contentInset: UIEdgeInsets) {
@@ -162,5 +161,4 @@ public class KVInfiniteScrollingView: UIView {
             }
         }
     }
-
 }

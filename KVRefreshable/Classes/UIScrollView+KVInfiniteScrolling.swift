@@ -71,8 +71,14 @@ extension UIScrollView {
     }
     
     public func triggerInfiniteScrolling() {
+        let lastActivityIndicatorViewColor = infiniteScrollingView?.activityIndicatorViewColor ?? .gray
+        infiniteScrollingView?.activityIndicatorViewColor = .clear
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) { [weak self] in
+            guard let weakSelf = self else { return }
+            weakSelf.infiniteScrollingView?.activityIndicatorViewColor = lastActivityIndicatorViewColor
+        }
+        
         self.infiniteScrollingView?.state = .triggered
         self.infiniteScrollingView?.startAnimating()
     }
-    
 }
