@@ -29,11 +29,12 @@ class ViewController: UIViewController {
                 self.allObjects.append("")
                 self.tableView.insertRows(at: [IndexPath(row: 0, section: 0)], with: .bottom)
                 self.tableView.endUpdates()
-                self.tableView.pullToRefreshView?.stopAnimating()
+                self.tableView.pullToRefreshView.stopAnimating()
             }
         }, withConfig: { [weak self] in
             guard let weakSelf = self else { return }
-            weakSelf.tableView.pullToRefreshView?.arrowColor = .black
+            weakSelf.tableView.pullToRefreshView.arrowColor = .black
+            weakSelf.tableView.pullToRefreshView.titleLabelFont = UIFont.systemFont(ofSize: 18.0)
         })
         
         tableView.addInfiniteScrollingWithActionHandler {
@@ -43,7 +44,7 @@ class ViewController: UIViewController {
                 self.allObjects.append("")
                 self.tableView.insertRows(at: [IndexPath(row: self.allObjects.count - 1, section: 0)], with: .fade)
                 self.tableView.endUpdates()
-                self.tableView.infiniteScrollingView?.stopAnimating()
+                self.tableView.infiniteScrollingView.stopAnimating()
             }
         }
         

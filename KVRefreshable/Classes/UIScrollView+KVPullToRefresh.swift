@@ -1,10 +1,26 @@
-//
-//  UIScrollView+KVPullToRefresh.swift
-//  PullToRefresh
-//
-//  Created by Vu Van Khac on 2/6/17.
-//  Copyright © 2017 Janle. All rights reserved.
-//
+/**
+ 
+ Copyright (c) 2017 Vu Van Khac <khacvv0451@gmail.com>
+ 
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ 
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ THE SOFTWARE.
+ 
+ */
 
 import UIKit
 
@@ -14,37 +30,41 @@ extension UIScrollView {
         static var pullToRefreshView = "PullToRefreshView"
     }
     
-    public private(set) var pullToRefreshView: KVPullToRefreshView? {
+    public private(set) var pullToRefreshView: KVPullToRefreshView {
         get {
-            return objc_getAssociatedObject(self, &KVPullToRefreshObject.pullToRefreshView) as? KVPullToRefreshView
+            if let pullToRefreshView = objc_getAssociatedObject(self, &KVPullToRefreshObject.pullToRefreshView) as? KVPullToRefreshView {
+                return pullToRefreshView
+            } else {
+                let pullToRefreshView = KVPullToRefreshView(frame: CGRect(x: 0, y: -60, width: bounds.size.width, height: 60))
+                objc_setAssociatedObject(self, &KVPullToRefreshObject.pullToRefreshView, pullToRefreshView, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+                return pullToRefreshView
+            }
         }
         
         set {
-            if let unwrappedValue = newValue {
-                self.willChangeValue(forKey: KVPullToRefreshObject.pullToRefreshView)
-                objc_setAssociatedObject(self, &KVPullToRefreshObject.pullToRefreshView, unwrappedValue, .OBJC_ASSOCIATION_ASSIGN)
-                self.didChangeValue(forKey: KVPullToRefreshObject.pullToRefreshView)
-            }
+            willChangeValue(forKey: KVPullToRefreshObject.pullToRefreshView)
+            objc_setAssociatedObject(self, &KVPullToRefreshObject.pullToRefreshView, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            didChangeValue(forKey: KVPullToRefreshObject.pullToRefreshView)
         }
     }
     
     public var showsPullToRefresh: Bool {
         get {
-            guard let pullToRefreshView = pullToRefreshView else {
-                return false
-            }
-            
-            return !pullToRefreshView.isHidden
+            return pullToRefreshView.isHidden
         }
         
         set {
-            guard let pullToRefreshView = pullToRefreshView else {
-                return
-            }
-            
             pullToRefreshView.isHidden = !newValue
             
-            if !newValue {
+            if newValue {
+                if !pullToRefreshView.observing {
+                    addObserver(pullToRefreshView, forKeyPath: "contentOffset", options: .new, context: nil)
+                    addObserver(pullToRefreshView, forKeyPath: "contentSize", options: .new, context: nil)
+                    addObserver(pullToRefreshView, forKeyPath: "frame", options: .new, context: nil)
+                    pullToRefreshView.frame = CGRect(x: 0, y: -60, width: bounds.size.width, height: 60)
+                    pullToRefreshView.observing = true
+                }
+            } else {
                 if pullToRefreshView.observing {
                     removeObserver(pullToRefreshView, forKeyPath: "contentOffset")
                     removeObserver(pullToRefreshView, forKeyPath: "contentSize")
@@ -52,49 +72,29 @@ extension UIScrollView {
                     pullToRefreshView.resetScrollViewContentInset()
                     pullToRefreshView.observing = false
                 }
-            } else {
-                if !pullToRefreshView.observing {
-                    addObserver(pullToRefreshView, forKeyPath: "contentOffset", options: .new, context: nil)
-                    addObserver(pullToRefreshView, forKeyPath: "contentSize", options: .new, context: nil)
-                    addObserver(pullToRefreshView, forKeyPath: "frame", options: .new, context: nil)
-                    pullToRefreshView.observing = true
-                    pullToRefreshView.frame = CGRect(x: 0, y: -60, width: bounds.size.width, height: 60)
-                }
             }
         }
     }
     
-    public func addPullToRefreshWithActionHandler(_ actionHandler: @escaping () -> Void, withConfig: () -> Void) {
-        if pullToRefreshView == nil {
-            let view = KVPullToRefreshView(frame: CGRect(x: 0, y: -60, width: bounds.size.width, height: 60))
-            view.pullToRefreshHandler = actionHandler
-            view.scrollView = self
-            view.originalTopInset = contentInset.top
-            addSubview(view)
-            pullToRefreshView = view
-            showsPullToRefresh = true
-        }
+    public func addPullToRefreshWithActionHandler(_ actionHandler: @escaping () -> Void, withConfig config: () -> Void) {
+        pullToRefreshView.pullToRefreshHandler = actionHandler
+        pullToRefreshView.scrollView = self
+        pullToRefreshView.originalTopInset = contentInset.top
+        addSubview(pullToRefreshView)
+        showsPullToRefresh = true
         
-        withConfig()
+        config()
     }
     
     public func triggerPullToRefresh() {
-        let lastTitleTextColor = pullToRefreshView?.titleTextColor ?? .darkGray
-        let lastSubtitleTextColor = pullToRefreshView?.subtitleTextColor ?? .darkGray
-        let lastActivityIndicatorViewColor = pullToRefreshView?.activityIndicatorViewColor ?? .gray
-        pullToRefreshView?.arrow.layer.opacity = 0
-        pullToRefreshView?.titleTextColor = .clear
-        pullToRefreshView?.subtitleTextColor = .clear
-        pullToRefreshView?.activityIndicatorViewColor = .clear
+        pullToRefreshView.alpha = 0
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) { [weak self] in
             guard let weakSelf = self else { return }
-            weakSelf.pullToRefreshView?.titleTextColor = lastTitleTextColor
-            weakSelf.pullToRefreshView?.subtitleTextColor = lastSubtitleTextColor
-            weakSelf.pullToRefreshView?.activityIndicatorViewColor = lastActivityIndicatorViewColor
+            weakSelf.pullToRefreshView.alpha = 1.0
         }
         
-        pullToRefreshView?.isFirstTrigger = true
-        pullToRefreshView?.state = .triggered
-        pullToRefreshView?.startAnimating()
+        pullToRefreshView.isFirstTrigger = true
+        pullToRefreshView.state = .triggered
+        pullToRefreshView.startAnimating()
     }
 }

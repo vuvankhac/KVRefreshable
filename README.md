@@ -21,7 +21,7 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 # For Swift 4.2
-pod 'KVRefreshable', '~> 1.8'
+pod 'KVRefreshable', '~> 1.9'
 ```
 
 ## Usage
@@ -30,7 +30,7 @@ Adding pull to refresh
 ```swift
 tableView.addPullToRefreshWithActionHandler {
     // Stop pull to refresh animation
-    self.tableView.pullToRefreshView?.stopAnimating()
+    self.tableView.pullToRefreshView.stopAnimating()
 }
 ```
 
@@ -54,7 +54,7 @@ Adding infinite scrolling
 ```swift
 tableView.addInfiniteScrollingWithActionHandler {
     // Stop infinite scrolling animation
-    self.tableView.infiniteScrollingView?.stopAnimating()
+    self.tableView.infiniteScrollingView.stopAnimating()
 }
 ```
 

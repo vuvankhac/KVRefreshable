@@ -1,10 +1,26 @@
-//
-//  KVPullToRefreshView.swift
-//  PullToRefresh
-//
-//  Created by Vu Van Khac on 2/6/17.
-//  Copyright © 2017 Janle. All rights reserved.
-//
+/**
+ 
+ Copyright (c) 2017 Vu Van Khac <khacvv0451@gmail.com>
+ 
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ 
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ THE SOFTWARE.
+ 
+ */
 
 import UIKit
 
@@ -37,29 +53,41 @@ public class KVPullToRefreshView: UIView {
         }
     }
     
+    public var titleLabelFont: UIFont = UIFont.boldSystemFont(ofSize: 14) {
+        didSet {
+            titleLabel.font = titleLabelFont
+        }
+    }
+    
+    public var subtitleLabelFont: UIFont = UIFont.systemFont(ofSize: 12) {
+        didSet {
+            subtitleLabel.font = subtitleLabelFont
+        }
+    }
+    
     private lazy var titleLabel: UILabel = {
         let titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 210, height: 20))
-        titleLabel.font = UIFont.boldSystemFont(ofSize: 14)
         titleLabel.backgroundColor = .clear
-        titleLabel.textColor = self.titleTextColor
-        self.addSubview(titleLabel)
+        titleLabel.font = titleLabelFont
+        titleLabel.textColor = titleTextColor
+        addSubview(titleLabel)
         
         return titleLabel
     }()
     
     private lazy var subtitleLabel: UILabel = {
         let subtitleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 210, height: 20))
-        subtitleLabel.font = UIFont.boldSystemFont(ofSize: 12)
         subtitleLabel.backgroundColor = .clear
-        subtitleLabel.textColor = self.subtitleTextColor
-        self.addSubview(subtitleLabel)
+        subtitleLabel.font = subtitleLabelFont
+        subtitleLabel.textColor = subtitleTextColor
+        addSubview(subtitleLabel)
         
         return subtitleLabel
     }()
     
     public var activityIndicatorViewColor: UIColor {
         get {
-            guard let color = self.activityIndicatorView.color else {
+            guard let color = activityIndicatorView.color else {
                 return .gray
             }
             
@@ -67,24 +95,24 @@ public class KVPullToRefreshView: UIView {
         }
         
         set {
-            self.activityIndicatorView.color = newValue
+            activityIndicatorView.color = newValue
         }
     }
     
     public var activityIndicatorViewStyle: UIActivityIndicatorView.Style {
         get {
-            return self.activityIndicatorView.style
+            return activityIndicatorView.style
         }
         
         set {
-            self.activityIndicatorView.style = newValue
+            activityIndicatorView.style = newValue
         }
     }
     
     private lazy var activityIndicatorView: UIActivityIndicatorView = {
         let activityIndicatorView = UIActivityIndicatorView(style: .gray)
         activityIndicatorView.hidesWhenStopped = true
-        self.addSubview(activityIndicatorView)
+        addSubview(activityIndicatorView)
         
         return activityIndicatorView
     }()
@@ -92,33 +120,33 @@ public class KVPullToRefreshView: UIView {
     var previousState: KVState = .stopped
     var state: KVState = .stopped {
         willSet {
-            self.previousState = self.state
+            previousState = state
         }
         
         didSet {
-            self.setNeedsLayout()
-            self.layoutIfNeeded()
+            setNeedsLayout()
+            layoutIfNeeded()
             
-            switch self.state {
+            switch state {
             case .stopped:
-                self.resetScrollViewContentInset()
+                resetScrollViewContentInset()
                 
             case .triggered:
                 break
                 
             case .loading:
-                self.setScrollViewContentInsetForLoading()
-                if self.previousState == .triggered && (self.pullToRefreshHandler != nil) {
-                    self.pullToRefreshHandler?()
+                setScrollViewContentInsetForLoading()
+                if previousState == .triggered && pullToRefreshHandler != nil {
+                    pullToRefreshHandler?()
                 }
             }
         }
     }
     
     lazy var arrow: KVPullToRefreshArrow = {
-        let arrow = KVPullToRefreshArrow(frame: CGRect(x: 0, y: self.bounds.size.height - 54, width: 22, height: 48))
+        let arrow = KVPullToRefreshArrow(frame: CGRect(x: 0, y: bounds.size.height - 54, width: 22, height: 48))
         arrow.backgroundColor = .clear
-        self.addSubview(arrow)
+        addSubview(arrow)
         
         return arrow
     }()
@@ -128,7 +156,7 @@ public class KVPullToRefreshView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.autoresizingMask = .flexibleWidth
+        autoresizingMask = .flexibleWidth
         titles = ["Pull to refresh", "Release to refresh", "Loading..."]
         subtitles = ["", "", ""]
     }
@@ -138,21 +166,20 @@ public class KVPullToRefreshView: UIView {
     }
     
     public override func willMove(toSuperview newSuperview: UIView?) {
-        if (self.superview != nil) && newSuperview == nil {
-            if let scrollView = self.superview as? UIScrollView, scrollView.showsPullToRefresh {
-                if observing {
+        if superview != nil && newSuperview == nil {
+            if let scrollView = superview as? UIScrollView {
+                if scrollView.showsPullToRefresh, observing {
                     scrollView.removeObserver(self, forKeyPath: "contentOffset")
                     scrollView.removeObserver(self, forKeyPath: "contentSize")
                     scrollView.removeObserver(self, forKeyPath: "frame")
                     observing = false
                 }
             }
-            
         }
     }
     
     public override func layoutSubviews() {
-        switch self.state {
+        switch state {
         case .stopped:
             activityIndicatorView.stopAnimating()
             rotateArrow(0, hide: false)
@@ -166,12 +193,12 @@ public class KVPullToRefreshView: UIView {
         }
         
         let leftViewWidth: CGFloat = max(arrow.bounds.size.width, activityIndicatorView.bounds.size.width)
-        let margin: CGFloat = 10
-        let marginY: CGFloat = 2
+        let marginX: CGFloat = 16
+        let marginY: CGFloat = 5
         
-        titleLabel.text = titles[state.value()]
-        let subtitle = subtitles[state.value()]
-        self.subtitleLabel.text = subtitle.count > 0 ? subtitle : nil
+        titleLabel.text = titles[state.rawValue]
+        let subtitle = subtitles[state.rawValue]
+        subtitleLabel.text = subtitle.count > 0 ? subtitle : nil
         
         let titleSize: CGSize = titleLabel.intrinsicContentSize
         let subtitleSize: CGSize = subtitleLabel.intrinsicContentSize
@@ -179,12 +206,12 @@ public class KVPullToRefreshView: UIView {
         let maxLabelWidth: CGFloat = max(titleSize.width, subtitleSize.width)
         var totalMaxWidth: CGFloat = 0
         if maxLabelWidth > 0 {
-            totalMaxWidth = leftViewWidth + margin + maxLabelWidth
+            totalMaxWidth = leftViewWidth + marginX + maxLabelWidth
         } else {
             totalMaxWidth = leftViewWidth + maxLabelWidth
         }
         
-        let labelX = (bounds.size.width / 2.0) - (totalMaxWidth / 2.0) + leftViewWidth + margin
+        let labelX = (bounds.size.width / 2.0) - (totalMaxWidth / 2.0) + leftViewWidth + marginX
         if subtitleSize.height > 0 {
             let totalHeight = titleSize.height + subtitleSize.height + marginY
             let minY = (bounds.size.height / 2.0) - (totalHeight / 2.0)
@@ -201,19 +228,19 @@ public class KVPullToRefreshView: UIView {
             subtitleLabel.frame = CGRect(x: labelX, y: titleY + titleSize.height + marginY, width: subtitleSize.width, height: subtitleSize.height)
         }
         
-        let arrowX: CGFloat = (self.bounds.size.width / 2.0) - (totalMaxWidth / 2.0) + (leftViewWidth - arrow.bounds.size.width) / 2.0
-        self.arrow.frame = CGRect(x: arrowX, y: (self.bounds.size.height / 2.0) - (arrow.bounds.size.height / 2.0), width: arrow.bounds.size.width, height: arrow.bounds.size.height)
+        let arrowX: CGFloat = (bounds.size.width / 2.0) - (totalMaxWidth / 2.0) + (leftViewWidth - arrow.bounds.size.width) / 2.0
+        arrow.frame = CGRect(x: arrowX, y: (bounds.size.height / 2.0) - (arrow.bounds.size.height / 2.0), width: arrow.bounds.size.width, height: arrow.bounds.size.height)
         activityIndicatorView.center = arrow.center
     }
     
     public func setTitle(_ title: String, forState state: KVState) {
-        titles[state.value()] = title
+        titles[state.rawValue] = title
         setNeedsLayout()
     }
     
     public func setSubtitle(_ subtitle: String, forState state: KVState) {
-        subtitles[state.value()] = subtitle
-        self.setNeedsLayout()
+        subtitles[state.rawValue] = subtitle
+        setNeedsLayout()
     }
     
     public func startAnimating() {
@@ -222,7 +249,7 @@ public class KVPullToRefreshView: UIView {
         }
         
         if abs(scrollView.contentOffset.y) < CGFloat.ulpOfOne {
-            scrollView.setContentOffset(CGPoint(x: scrollView.contentOffset.x, y: -self.frame.size.height), animated: true)
+            scrollView.setContentOffset(CGPoint(x: scrollView.contentOffset.x, y: -frame.size.height), animated: true)
             wasTriggeredByUser = false
         } else {
             wasTriggeredByUser = true
@@ -262,13 +289,15 @@ public class KVPullToRefreshView: UIView {
     }
     
     func setScrollViewContentInset(_ contentInset: UIEdgeInsets) {
-        UIView.animate(withDuration: 0.3, delay: 0, options: [.allowUserInteraction, .beginFromCurrentState], animations: { 
-            self.scrollView?.contentInset = contentInset
+        UIView.animate(withDuration: 0.3, delay: 0, options: [.allowUserInteraction, .beginFromCurrentState], animations: {
+            if let scrollView = self.scrollView {
+                scrollView.contentInset = contentInset
+            }
         }, completion: nil)
     }
     
     func rotateArrow(_ degrees: Float, hide: Bool) {
-        UIView.animate(withDuration: 0.2, delay: 0, options: .allowUserInteraction, animations: {
+        UIView.animate(withDuration: 0.3, delay: 0, options: .allowUserInteraction, animations: {
             self.arrow.layer.transform = CATransform3DMakeRotation(CGFloat(degrees), 0, 0, 1)
             if hide {
                 self.arrow.layer.opacity = 0
@@ -311,7 +340,7 @@ public class KVPullToRefreshView: UIView {
             }
             
             var offset: CGFloat = max(-scrollView.contentOffset.y, 0)
-            offset = min(offset, originalTopInset + self.bounds.size.height)
+            offset = min(offset, originalTopInset + bounds.size.height)
             let contentInset: UIEdgeInsets = scrollView.contentInset
             scrollView.contentInset = UIEdgeInsets(top: offset, left: contentInset.left, bottom: contentInset.bottom, right: contentInset.right)
         }

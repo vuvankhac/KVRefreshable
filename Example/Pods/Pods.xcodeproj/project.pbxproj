@@ -16,7 +16,7 @@
 		65E85F3CE8AA9A036FC8D37566D998B8 /* Pods-KVRefreshable_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A16366A1ACC55BA8A066E083EF780312 /* Pods-KVRefreshable_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67D8741B98AB87E9DF9ABF7DFF87C278 /* Pods-KVRefreshable_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A4133E8CE39EE0A43FFEE144F69D3C /* Pods-KVRefreshable_Tests-dummy.m */; };
 		8AD81901C6D05810FA14F93A02C7D967 /* Pods-KVRefreshable_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D434C4E25EE8CBA2D5C7A995375C8619 /* Pods-KVRefreshable_Example-dummy.m */; };
-		C4087C571E4963B3001D7769 /* KVConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4087C511E4963B3001D7769 /* KVConstants.swift */; };
+		C4087C571E4963B3001D7769 /* KVEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4087C511E4963B3001D7769 /* KVEnum.swift */; };
 		C4087C581E4963B3001D7769 /* KVInfiniteScrollingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4087C521E4963B3001D7769 /* KVInfiniteScrollingView.swift */; };
 		C4087C591E4963B3001D7769 /* KVPullToRefreshArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4087C531E4963B3001D7769 /* KVPullToRefreshArrow.swift */; };
 		C4087C5A1E4963B3001D7769 /* KVPullToRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4087C541E4963B3001D7769 /* KVPullToRefreshView.swift */; };
@@ -59,7 +59,7 @@
 		A16366A1ACC55BA8A066E083EF780312 /* Pods-KVRefreshable_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KVRefreshable_Example-umbrella.h"; sourceTree = "<group>"; };
 		AC0BA0D9C0078AF48438EA939E68A00A /* Pods-KVRefreshable_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KVRefreshable_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B7C3B1BB9ABC4CE99B400906265B2C7F /* Pods-KVRefreshable_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KVRefreshable_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		C4087C511E4963B3001D7769 /* KVConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KVConstants.swift; sourceTree = "<group>"; };
+		C4087C511E4963B3001D7769 /* KVEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KVEnum.swift; sourceTree = "<group>"; };
 		C4087C521E4963B3001D7769 /* KVInfiniteScrollingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KVInfiniteScrollingView.swift; sourceTree = "<group>"; };
 		C4087C531E4963B3001D7769 /* KVPullToRefreshArrow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KVPullToRefreshArrow.swift; sourceTree = "<group>"; };
 		C4087C541E4963B3001D7769 /* KVPullToRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KVPullToRefreshView.swift; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 		1EAF54A5D8171CE611CE9BA3CFA352DB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C4087C511E4963B3001D7769 /* KVConstants.swift */,
+				C4087C511E4963B3001D7769 /* KVEnum.swift */,
 				C4087C521E4963B3001D7769 /* KVInfiniteScrollingView.swift */,
 				C4087C531E4963B3001D7769 /* KVPullToRefreshArrow.swift */,
 				C4087C541E4963B3001D7769 /* KVPullToRefreshView.swift */,
@@ -330,19 +330,20 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1020;
 				TargetAttributes = {
 					2FBD8066500CAC1D7742181F79B96FAE = {
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
 			productRefGroup = 3A8CF0464494CDBFEB86076D748877E1 /* Products */;
@@ -381,7 +382,7 @@
 				C4087C5B1E4963B3001D7769 /* UIScrollView+KVInfiniteScrolling.swift in Sources */,
 				C4087C5A1E4963B3001D7769 /* KVPullToRefreshView.swift in Sources */,
 				C4087C591E4963B3001D7769 /* KVPullToRefreshArrow.swift in Sources */,
-				C4087C571E4963B3001D7769 /* KVConstants.swift in Sources */,
+				C4087C571E4963B3001D7769 /* KVEnum.swift in Sources */,
 				C4087C581E4963B3001D7769 /* KVInfiniteScrollingView.swift in Sources */,
 				535AAC75CB643A5E2168254346925993 /* KVRefreshable-dummy.m in Sources */,
 			);
@@ -531,8 +532,7 @@
 				PRODUCT_NAME = KVRefreshable;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -543,6 +543,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -596,6 +597,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -712,8 +714,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
