@@ -7,277 +7,277 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06FA2235EFB53227FAF2D07CDD57DCA7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
-		09B6739C3C9EF0949FF34AEA50E25E82 /* Pods-KVRefreshable_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F3DC10D8802844E1FFF915CF9022EDB7 /* Pods-KVRefreshable_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A0B5E68EBC870703EB1EA7FF7FEB8DA /* KVRefreshable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F431BF638F7B0FAAE2ACE94471E069EC /* KVRefreshable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		382CECADA0C744CC93C9171C941C7F4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		4ABCF331734C2E6982EBFA91955C7955 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		535AAC75CB643A5E2168254346925993 /* KVRefreshable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3ECEB96CC9546BB10B1AF1D2BA7FBC /* KVRefreshable-dummy.m */; };
-		65E85F3CE8AA9A036FC8D37566D998B8 /* Pods-KVRefreshable_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A16366A1ACC55BA8A066E083EF780312 /* Pods-KVRefreshable_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		67D8741B98AB87E9DF9ABF7DFF87C278 /* Pods-KVRefreshable_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A4133E8CE39EE0A43FFEE144F69D3C /* Pods-KVRefreshable_Tests-dummy.m */; };
-		8AD81901C6D05810FA14F93A02C7D967 /* Pods-KVRefreshable_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D434C4E25EE8CBA2D5C7A995375C8619 /* Pods-KVRefreshable_Example-dummy.m */; };
-		C4087C571E4963B3001D7769 /* KVEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4087C511E4963B3001D7769 /* KVEnum.swift */; };
-		C4087C581E4963B3001D7769 /* KVInfiniteScrollingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4087C521E4963B3001D7769 /* KVInfiniteScrollingView.swift */; };
-		C4087C591E4963B3001D7769 /* KVPullToRefreshArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4087C531E4963B3001D7769 /* KVPullToRefreshArrow.swift */; };
-		C4087C5A1E4963B3001D7769 /* KVPullToRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4087C541E4963B3001D7769 /* KVPullToRefreshView.swift */; };
-		C4087C5B1E4963B3001D7769 /* UIScrollView+KVInfiniteScrolling.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4087C551E4963B3001D7769 /* UIScrollView+KVInfiniteScrolling.swift */; };
-		C4087C5C1E4963B3001D7769 /* UIScrollView+KVPullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4087C561E4963B3001D7769 /* UIScrollView+KVPullToRefresh.swift */; };
-		D4F522358346F12A10DCA0D32FFF160C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		1A995316D6FFB1EDD1D8DD4C4EC3D584 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
+		2E563DEE6FD0C43EC8526BCACCB6E46A /* KVPullToRefreshArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D9BA2850AFCC1F3853EA2444B63BA0 /* KVPullToRefreshArrow.swift */; };
+		32BE6290085879F933314DC06A62344B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
+		46097E970699EACF53578A46E0C05EF5 /* KVPullToRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C755D3BADC3FC4BE4FA8406A3F0E9C /* KVPullToRefreshView.swift */; };
+		486397EB7DCEFCD47D602569E34FCAE3 /* Pods-KVRefreshable_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4DD058B5AE1C0CDB25980770B33240 /* Pods-KVRefreshable_Tests-dummy.m */; };
+		5F1E6AC12AC67000396CF985A464A928 /* KVRefreshable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 65C2BA3D319CB22A2097AE9D3C6D9328 /* KVRefreshable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FC9CB581C4BA9ADB987D8BB1C57479B /* UIScrollView+KVPullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1B78B9DB4E79D1863869D3ADFA5219 /* UIScrollView+KVPullToRefresh.swift */; };
+		653961D43C2B7BE6C6385980FB48C33D /* KVEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3FB6B982A16657699EB4DFF3E9F7AB /* KVEnum.swift */; };
+		6B1E28DF0EE98E9D2DDC29BFB0A185FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */; };
+		6EC0A0D28EC86729466137FE4AF16296 /* Pods-KVRefreshable_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 94EB284A098BA02496D0DD53AE807395 /* Pods-KVRefreshable_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9739D5085029DA23ECE864B9EBFF5BB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
+		A670D8D038BB0DF79C0375DF4ACE96B5 /* UIScrollView+KVInfiniteScrolling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CF3119E18CF773A63DA937047C75EA /* UIScrollView+KVInfiniteScrolling.swift */; };
+		B2A4D2B81B33804463F52DE25EC2147A /* Pods-KVRefreshable_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D3FA03C16F777918017C8B6C8B0C03E2 /* Pods-KVRefreshable_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B849F5068555CE7C379AAE143C77230A /* KVInfiniteScrollingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36772F20D8F0B1D84D47485B97176B7 /* KVInfiniteScrollingView.swift */; };
+		BF8E825B029CF3BDFB41829FC98D847B /* Pods-KVRefreshable_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A9BFD6A3078F28C88C5E734123EA3B /* Pods-KVRefreshable_Example-dummy.m */; };
+		D84CF7C57B3569759269C9F149AA0166 /* KVRefreshable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E29F7B90D9516C3CB579B074F7C814 /* KVRefreshable-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9B66A2940CD75822F9A6896B34C39A2A /* PBXContainerItemProxy */ = {
+		37FD780C05CD0697BAC0D450C4075EB2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2FBD8066500CAC1D7742181F79B96FAE;
+			remoteGlobalIDString = 28D779BFDB205E4C04548A616A0648B0;
+			remoteInfo = "Pods-KVRefreshable_Example";
+		};
+		E39F625D40411A088969A134EAB0BBD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AA8639979EC17B60E9A2E9CE0A93DD5;
 			remoteInfo = KVRefreshable;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0410441AC6F44CB19618DE92EE7FD4D3 /* Pods-KVRefreshable_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KVRefreshable_Tests-resources.sh"; sourceTree = "<group>"; };
-		0A4C7B731D066292CD0E927AB647D475 /* KVRefreshable.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KVRefreshable.xcconfig; sourceTree = "<group>"; };
-		140DB95EA4B5E5CECF833497AF0C5BAD /* Pods-KVRefreshable_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KVRefreshable_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		226773B410B9A913932578F6EA616209 /* Pods-KVRefreshable_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KVRefreshable_Example-frameworks.sh"; sourceTree = "<group>"; };
-		23CD103B90DADAE8B91D4F47ECAE1DE6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2A3ECEB96CC9546BB10B1AF1D2BA7FBC /* KVRefreshable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KVRefreshable-dummy.m"; sourceTree = "<group>"; };
-		359A97AE05244075FF86F6AE0917C18B /* KVRefreshable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KVRefreshable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		51F765E5AF55F7A019E18793D52E74CB /* KVRefreshable-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KVRefreshable-prefix.pch"; sourceTree = "<group>"; };
-		5D2B4133EDBB90FB5AE7C37FF79A71A6 /* Pods-KVRefreshable_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KVRefreshable_Tests.modulemap"; sourceTree = "<group>"; };
-		5D5316350DF63914EFDB8F3B1BEFA9A1 /* Pods_KVRefreshable_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KVRefreshable_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		680D240526252A627ADEE79CC2801CDE /* Pods_KVRefreshable_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KVRefreshable_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		70A4133E8CE39EE0A43FFEE144F69D3C /* Pods-KVRefreshable_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KVRefreshable_Tests-dummy.m"; sourceTree = "<group>"; };
-		758F55F5FEAB71940C23C0B3CEB710FA /* Pods-KVRefreshable_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KVRefreshable_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		8707D68B12002BA547A930CA1B821BDB /* Pods-KVRefreshable_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KVRefreshable_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		87083F6F46F1845FB6641A421538A759 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8BDE34C2C8DC48242AC3323AF4127860 /* KVRefreshable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KVRefreshable.modulemap; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9D502E98FE9A67AFA06100839644849A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A16366A1ACC55BA8A066E083EF780312 /* Pods-KVRefreshable_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KVRefreshable_Example-umbrella.h"; sourceTree = "<group>"; };
-		AC0BA0D9C0078AF48438EA939E68A00A /* Pods-KVRefreshable_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KVRefreshable_Example.release.xcconfig"; sourceTree = "<group>"; };
-		B7C3B1BB9ABC4CE99B400906265B2C7F /* Pods-KVRefreshable_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KVRefreshable_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		C4087C511E4963B3001D7769 /* KVEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KVEnum.swift; sourceTree = "<group>"; };
-		C4087C521E4963B3001D7769 /* KVInfiniteScrollingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KVInfiniteScrollingView.swift; sourceTree = "<group>"; };
-		C4087C531E4963B3001D7769 /* KVPullToRefreshArrow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KVPullToRefreshArrow.swift; sourceTree = "<group>"; };
-		C4087C541E4963B3001D7769 /* KVPullToRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KVPullToRefreshView.swift; sourceTree = "<group>"; };
-		C4087C551E4963B3001D7769 /* UIScrollView+KVInfiniteScrolling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+KVInfiniteScrolling.swift"; sourceTree = "<group>"; };
-		C4087C561E4963B3001D7769 /* UIScrollView+KVPullToRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+KVPullToRefresh.swift"; sourceTree = "<group>"; };
-		D434C4E25EE8CBA2D5C7A995375C8619 /* Pods-KVRefreshable_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KVRefreshable_Example-dummy.m"; sourceTree = "<group>"; };
-		D8DAE45567B1E5DA5447337F90B7DF80 /* Pods-KVRefreshable_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KVRefreshable_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DF24B4B7087A48E9DF42B33DCAD8221F /* Pods-KVRefreshable_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KVRefreshable_Example-resources.sh"; sourceTree = "<group>"; };
-		EA3C8139BC9D633D934AD64A23151527 /* Pods-KVRefreshable_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KVRefreshable_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		EB02EA9549C1B64B36147BC276FCEF41 /* Pods-KVRefreshable_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KVRefreshable_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		ED49F41D9CF684841DA19A4D28B1B57B /* Pods-KVRefreshable_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KVRefreshable_Example.modulemap"; sourceTree = "<group>"; };
-		F3DC10D8802844E1FFF915CF9022EDB7 /* Pods-KVRefreshable_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KVRefreshable_Tests-umbrella.h"; sourceTree = "<group>"; };
-		F431BF638F7B0FAAE2ACE94471E069EC /* KVRefreshable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KVRefreshable-umbrella.h"; sourceTree = "<group>"; };
-		F9C1536C5C541D349AFC3070BA14D9C2 /* Pods-KVRefreshable_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KVRefreshable_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		016BFE8DFEBB0651C376A1FF81FB4E0B /* Pods-KVRefreshable_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KVRefreshable_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		04742D10C0597B0B50446AFA98EB19B8 /* Pods-KVRefreshable_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KVRefreshable_Example-frameworks.sh"; sourceTree = "<group>"; };
+		054E774E901C7C43D4AB66698E54A3F2 /* KVRefreshable.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = KVRefreshable.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		06CF3119E18CF773A63DA937047C75EA /* UIScrollView+KVInfiniteScrolling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+KVInfiniteScrolling.swift"; path = "KVRefreshable/Classes/UIScrollView+KVInfiniteScrolling.swift"; sourceTree = "<group>"; };
+		079F42651F61BA35B6F22B899B8C3375 /* Pods-KVRefreshable_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KVRefreshable_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		16142C86FC4D25B331556B06FFA03E72 /* Pods-KVRefreshable_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KVRefreshable_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		176E346C3B0E66408F56518337D50AE6 /* Pods-KVRefreshable_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KVRefreshable_Example.release.xcconfig"; sourceTree = "<group>"; };
+		1966A18821DA6838A397BE617201D4F6 /* KVRefreshable-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KVRefreshable-Info.plist"; sourceTree = "<group>"; };
+		21E29F7B90D9516C3CB579B074F7C814 /* KVRefreshable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KVRefreshable-dummy.m"; sourceTree = "<group>"; };
+		2216F61DB402A29F059ADDB64F82B1C8 /* Pods-KVRefreshable_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KVRefreshable_Tests-Info.plist"; sourceTree = "<group>"; };
+		22AE6299C620A871CD0D56156ED6EEAE /* Pods-KVRefreshable_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KVRefreshable_Tests.modulemap"; sourceTree = "<group>"; };
+		2A3FB6B982A16657699EB4DFF3E9F7AB /* KVEnum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KVEnum.swift; path = KVRefreshable/Classes/KVEnum.swift; sourceTree = "<group>"; };
+		40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5A4DD058B5AE1C0CDB25980770B33240 /* Pods-KVRefreshable_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KVRefreshable_Tests-dummy.m"; sourceTree = "<group>"; };
+		64CA1324AF77A7960C5C9592EB111FE1 /* KVRefreshable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KVRefreshable.framework; path = KVRefreshable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65C2BA3D319CB22A2097AE9D3C6D9328 /* KVRefreshable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KVRefreshable-umbrella.h"; sourceTree = "<group>"; };
+		6D121B4377AC82EA42D9A5EB23983352 /* Pods-KVRefreshable_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KVRefreshable_Example-Info.plist"; sourceTree = "<group>"; };
+		7B37142A3BBA0ABB9E57576DD31F38FD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		83C129B09CBA7414688EB7BE30D670FC /* Pods_KVRefreshable_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KVRefreshable_Tests.framework; path = "Pods-KVRefreshable_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85D430BB350BE4FB597C8BE14548AD96 /* Pods_KVRefreshable_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KVRefreshable_Example.framework; path = "Pods-KVRefreshable_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93EC33E4B9DEDB32F7A2F665733B7EC3 /* Pods-KVRefreshable_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KVRefreshable_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		94EB284A098BA02496D0DD53AE807395 /* Pods-KVRefreshable_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KVRefreshable_Tests-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A29F80922B478F6DD1744E6C67595224 /* KVRefreshable-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KVRefreshable-prefix.pch"; sourceTree = "<group>"; };
+		A36772F20D8F0B1D84D47485B97176B7 /* KVInfiniteScrollingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KVInfiniteScrollingView.swift; path = KVRefreshable/Classes/KVInfiniteScrollingView.swift; sourceTree = "<group>"; };
+		A81FDF2B699B8CDF79E00AE89D933C44 /* KVRefreshable.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KVRefreshable.xcconfig; sourceTree = "<group>"; };
+		BF5765C327A0C2D0D507472A95F0575B /* Pods-KVRefreshable_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KVRefreshable_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C4A9BFD6A3078F28C88C5E734123EA3B /* Pods-KVRefreshable_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KVRefreshable_Example-dummy.m"; sourceTree = "<group>"; };
+		C68E1504A0C77DFB2D2827E8F5D49181 /* Pods-KVRefreshable_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KVRefreshable_Example.modulemap"; sourceTree = "<group>"; };
+		D1D471410D4D23CF7FBD5029316DB113 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		D3FA03C16F777918017C8B6C8B0C03E2 /* Pods-KVRefreshable_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KVRefreshable_Example-umbrella.h"; sourceTree = "<group>"; };
+		D50F3BE826ABA16AE897A66DB42C67F9 /* Pods-KVRefreshable_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KVRefreshable_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D7D9BA2850AFCC1F3853EA2444B63BA0 /* KVPullToRefreshArrow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KVPullToRefreshArrow.swift; path = KVRefreshable/Classes/KVPullToRefreshArrow.swift; sourceTree = "<group>"; };
+		DD94CA40506FB32425916253AC541A8D /* KVRefreshable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KVRefreshable.modulemap; sourceTree = "<group>"; };
+		E1C755D3BADC3FC4BE4FA8406A3F0E9C /* KVPullToRefreshView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KVPullToRefreshView.swift; path = KVRefreshable/Classes/KVPullToRefreshView.swift; sourceTree = "<group>"; };
+		E9E0955C55DEAC3E313DA1BBF2264F1B /* Pods-KVRefreshable_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KVRefreshable_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EC1B78B9DB4E79D1863869D3ADFA5219 /* UIScrollView+KVPullToRefresh.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+KVPullToRefresh.swift"; path = "KVRefreshable/Classes/UIScrollView+KVPullToRefresh.swift"; sourceTree = "<group>"; };
+		ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		873CCE8B4A672EA200514326679F612F /* Frameworks */ = {
+		40A7346157288215DD49F9611FB8D5AA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4F522358346F12A10DCA0D32FFF160C /* Foundation.framework in Frameworks */,
+				32BE6290085879F933314DC06A62344B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		98BBBA3D5CBBC918BD50175419A3BF79 /* Frameworks */ = {
+		B671C728A30C966BE39456A00C0BC19B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4ABCF331734C2E6982EBFA91955C7955 /* Foundation.framework in Frameworks */,
+				9739D5085029DA23ECE864B9EBFF5BB4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ACD06FF27910B11C0CF121D5FECE474F /* Frameworks */ = {
+		DD3E1C2A0BAF337B27D3A07CC28C89E5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				382CECADA0C744CC93C9171C941C7F4E /* Foundation.framework in Frameworks */,
-				06FA2235EFB53227FAF2D07CDD57DCA7 /* UIKit.framework in Frameworks */,
+				1A995316D6FFB1EDD1D8DD4C4EC3D584 /* Foundation.framework in Frameworks */,
+				6B1E28DF0EE98E9D2DDC29BFB0A185FE /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1EAF54A5D8171CE611CE9BA3CFA352DB /* Classes */ = {
+		104E0BEE8FE3A82CFA3E103D1175FED2 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C4087C511E4963B3001D7769 /* KVEnum.swift */,
-				C4087C521E4963B3001D7769 /* KVInfiniteScrollingView.swift */,
-				C4087C531E4963B3001D7769 /* KVPullToRefreshArrow.swift */,
-				C4087C541E4963B3001D7769 /* KVPullToRefreshView.swift */,
-				C4087C551E4963B3001D7769 /* UIScrollView+KVInfiniteScrolling.swift */,
-				C4087C561E4963B3001D7769 /* UIScrollView+KVPullToRefresh.swift */,
+				CFEAF5A564ADCA12F7A7528654B25F5D /* KVRefreshable */,
 			);
-			path = Classes;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		3A8CF0464494CDBFEB86076D748877E1 /* Products */ = {
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				359A97AE05244075FF86F6AE0917C18B /* KVRefreshable.framework */,
-				680D240526252A627ADEE79CC2801CDE /* Pods_KVRefreshable_Example.framework */,
-				5D5316350DF63914EFDB8F3B1BEFA9A1 /* Pods_KVRefreshable_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E6EE98446B568159EE277B68FD442AF0 /* iOS */,
+				E169A450ED27AC725DF52953F66D11E0 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		492FEAB3D9AE0ADC80B000B4FCB7BE39 /* Pods-KVRefreshable_Example */ = {
+		28D5039F0543447DC4BE0AB3D2237C4B /* Pods-KVRefreshable_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				23CD103B90DADAE8B91D4F47ECAE1DE6 /* Info.plist */,
-				ED49F41D9CF684841DA19A4D28B1B57B /* Pods-KVRefreshable_Example.modulemap */,
-				EA3C8139BC9D633D934AD64A23151527 /* Pods-KVRefreshable_Example-acknowledgements.markdown */,
-				8707D68B12002BA547A930CA1B821BDB /* Pods-KVRefreshable_Example-acknowledgements.plist */,
-				D434C4E25EE8CBA2D5C7A995375C8619 /* Pods-KVRefreshable_Example-dummy.m */,
-				226773B410B9A913932578F6EA616209 /* Pods-KVRefreshable_Example-frameworks.sh */,
-				DF24B4B7087A48E9DF42B33DCAD8221F /* Pods-KVRefreshable_Example-resources.sh */,
-				A16366A1ACC55BA8A066E083EF780312 /* Pods-KVRefreshable_Example-umbrella.h */,
-				EB02EA9549C1B64B36147BC276FCEF41 /* Pods-KVRefreshable_Example.debug.xcconfig */,
-				AC0BA0D9C0078AF48438EA939E68A00A /* Pods-KVRefreshable_Example.release.xcconfig */,
-			);
-			name = "Pods-KVRefreshable_Example";
-			path = "Target Support Files/Pods-KVRefreshable_Example";
-			sourceTree = "<group>";
-		};
-		6604E85E529A8112B8FB74B52BB5783B /* KVRefreshable */ = {
-			isa = PBXGroup;
-			children = (
-				C5B41FD7025F5FC8AE3E8CCC42B3B5DE /* KVRefreshable */,
-				6F6A9CF09702EDCA8CC34199F9830EA5 /* Support Files */,
-			);
-			name = KVRefreshable;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		6F6A9CF09702EDCA8CC34199F9830EA5 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				87083F6F46F1845FB6641A421538A759 /* Info.plist */,
-				8BDE34C2C8DC48242AC3323AF4127860 /* KVRefreshable.modulemap */,
-				0A4C7B731D066292CD0E927AB647D475 /* KVRefreshable.xcconfig */,
-				2A3ECEB96CC9546BB10B1AF1D2BA7FBC /* KVRefreshable-dummy.m */,
-				51F765E5AF55F7A019E18793D52E74CB /* KVRefreshable-prefix.pch */,
-				F431BF638F7B0FAAE2ACE94471E069EC /* KVRefreshable-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/KVRefreshable";
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				A298BE0144A91194C1F43FE5322AD713 /* Development Pods */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				3A8CF0464494CDBFEB86076D748877E1 /* Products */,
-				C5ECAAE59A52A1DD56007C4654B928DF /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		89C74B4FC70C0E17E803265C7DD78439 /* Pods-KVRefreshable_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				9D502E98FE9A67AFA06100839644849A /* Info.plist */,
-				5D2B4133EDBB90FB5AE7C37FF79A71A6 /* Pods-KVRefreshable_Tests.modulemap */,
-				D8DAE45567B1E5DA5447337F90B7DF80 /* Pods-KVRefreshable_Tests-acknowledgements.markdown */,
-				758F55F5FEAB71940C23C0B3CEB710FA /* Pods-KVRefreshable_Tests-acknowledgements.plist */,
-				70A4133E8CE39EE0A43FFEE144F69D3C /* Pods-KVRefreshable_Tests-dummy.m */,
-				B7C3B1BB9ABC4CE99B400906265B2C7F /* Pods-KVRefreshable_Tests-frameworks.sh */,
-				0410441AC6F44CB19618DE92EE7FD4D3 /* Pods-KVRefreshable_Tests-resources.sh */,
-				F3DC10D8802844E1FFF915CF9022EDB7 /* Pods-KVRefreshable_Tests-umbrella.h */,
-				140DB95EA4B5E5CECF833497AF0C5BAD /* Pods-KVRefreshable_Tests.debug.xcconfig */,
-				F9C1536C5C541D349AFC3070BA14D9C2 /* Pods-KVRefreshable_Tests.release.xcconfig */,
+				22AE6299C620A871CD0D56156ED6EEAE /* Pods-KVRefreshable_Tests.modulemap */,
+				D50F3BE826ABA16AE897A66DB42C67F9 /* Pods-KVRefreshable_Tests-acknowledgements.markdown */,
+				93EC33E4B9DEDB32F7A2F665733B7EC3 /* Pods-KVRefreshable_Tests-acknowledgements.plist */,
+				5A4DD058B5AE1C0CDB25980770B33240 /* Pods-KVRefreshable_Tests-dummy.m */,
+				2216F61DB402A29F059ADDB64F82B1C8 /* Pods-KVRefreshable_Tests-Info.plist */,
+				94EB284A098BA02496D0DD53AE807395 /* Pods-KVRefreshable_Tests-umbrella.h */,
+				079F42651F61BA35B6F22B899B8C3375 /* Pods-KVRefreshable_Tests.debug.xcconfig */,
+				16142C86FC4D25B331556B06FFA03E72 /* Pods-KVRefreshable_Tests.release.xcconfig */,
 			);
 			name = "Pods-KVRefreshable_Tests";
 			path = "Target Support Files/Pods-KVRefreshable_Tests";
 			sourceTree = "<group>";
 		};
-		A298BE0144A91194C1F43FE5322AD713 /* Development Pods */ = {
+		6DC178F76DA90E6BE911115C576B16F6 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				6604E85E529A8112B8FB74B52BB5783B /* KVRefreshable */,
+				054E774E901C7C43D4AB66698E54A3F2 /* KVRefreshable.podspec */,
+				D1D471410D4D23CF7FBD5029316DB113 /* LICENSE */,
+				7B37142A3BBA0ABB9E57576DD31F38FD /* README.md */,
 			);
-			name = "Development Pods";
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		C5B41FD7025F5FC8AE3E8CCC42B3B5DE /* KVRefreshable */ = {
+		7D31D528652326B7EA44DBCE2A469CF4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1EAF54A5D8171CE611CE9BA3CFA352DB /* Classes */,
+				64CA1324AF77A7960C5C9592EB111FE1 /* KVRefreshable.framework */,
+				85D430BB350BE4FB597C8BE14548AD96 /* Pods_KVRefreshable_Example.framework */,
+				83C129B09CBA7414688EB7BE30D670FC /* Pods_KVRefreshable_Tests.framework */,
 			);
-			path = KVRefreshable;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		C5ECAAE59A52A1DD56007C4654B928DF /* Targets Support Files */ = {
+		A7BDACEF6239CF3BE3C3F04FE4BC4DD1 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				492FEAB3D9AE0ADC80B000B4FCB7BE39 /* Pods-KVRefreshable_Example */,
-				89C74B4FC70C0E17E803265C7DD78439 /* Pods-KVRefreshable_Tests */,
+				DD94CA40506FB32425916253AC541A8D /* KVRefreshable.modulemap */,
+				A81FDF2B699B8CDF79E00AE89D933C44 /* KVRefreshable.xcconfig */,
+				21E29F7B90D9516C3CB579B074F7C814 /* KVRefreshable-dummy.m */,
+				1966A18821DA6838A397BE617201D4F6 /* KVRefreshable-Info.plist */,
+				A29F80922B478F6DD1744E6C67595224 /* KVRefreshable-prefix.pch */,
+				65C2BA3D319CB22A2097AE9D3C6D9328 /* KVRefreshable-umbrella.h */,
 			);
-			name = "Targets Support Files";
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/KVRefreshable";
 			sourceTree = "<group>";
 		};
-		E6EE98446B568159EE277B68FD442AF0 /* iOS */ = {
+		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
-				616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */,
-				7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */,
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				104E0BEE8FE3A82CFA3E103D1175FED2 /* Development Pods */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				7D31D528652326B7EA44DBCE2A469CF4 /* Products */,
+				FF09C0933C0504ABC4B241DECEA4B49D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CFEAF5A564ADCA12F7A7528654B25F5D /* KVRefreshable */ = {
+			isa = PBXGroup;
+			children = (
+				2A3FB6B982A16657699EB4DFF3E9F7AB /* KVEnum.swift */,
+				A36772F20D8F0B1D84D47485B97176B7 /* KVInfiniteScrollingView.swift */,
+				D7D9BA2850AFCC1F3853EA2444B63BA0 /* KVPullToRefreshArrow.swift */,
+				E1C755D3BADC3FC4BE4FA8406A3F0E9C /* KVPullToRefreshView.swift */,
+				06CF3119E18CF773A63DA937047C75EA /* UIScrollView+KVInfiniteScrolling.swift */,
+				EC1B78B9DB4E79D1863869D3ADFA5219 /* UIScrollView+KVPullToRefresh.swift */,
+				6DC178F76DA90E6BE911115C576B16F6 /* Pod */,
+				A7BDACEF6239CF3BE3C3F04FE4BC4DD1 /* Support Files */,
+			);
+			name = KVRefreshable;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		E169A450ED27AC725DF52953F66D11E0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */,
+				ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		EB2CD4215EC44D0FEA076CE9A88E7685 /* Pods-KVRefreshable_Example */ = {
+			isa = PBXGroup;
+			children = (
+				C68E1504A0C77DFB2D2827E8F5D49181 /* Pods-KVRefreshable_Example.modulemap */,
+				E9E0955C55DEAC3E313DA1BBF2264F1B /* Pods-KVRefreshable_Example-acknowledgements.markdown */,
+				016BFE8DFEBB0651C376A1FF81FB4E0B /* Pods-KVRefreshable_Example-acknowledgements.plist */,
+				C4A9BFD6A3078F28C88C5E734123EA3B /* Pods-KVRefreshable_Example-dummy.m */,
+				04742D10C0597B0B50446AFA98EB19B8 /* Pods-KVRefreshable_Example-frameworks.sh */,
+				6D121B4377AC82EA42D9A5EB23983352 /* Pods-KVRefreshable_Example-Info.plist */,
+				D3FA03C16F777918017C8B6C8B0C03E2 /* Pods-KVRefreshable_Example-umbrella.h */,
+				BF5765C327A0C2D0D507472A95F0575B /* Pods-KVRefreshable_Example.debug.xcconfig */,
+				176E346C3B0E66408F56518337D50AE6 /* Pods-KVRefreshable_Example.release.xcconfig */,
+			);
+			name = "Pods-KVRefreshable_Example";
+			path = "Target Support Files/Pods-KVRefreshable_Example";
+			sourceTree = "<group>";
+		};
+		FF09C0933C0504ABC4B241DECEA4B49D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB2CD4215EC44D0FEA076CE9A88E7685 /* Pods-KVRefreshable_Example */,
+				28D5039F0543447DC4BE0AB3D2237C4B /* Pods-KVRefreshable_Tests */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4AF060885E044BF3F66D625F0F2029DB /* Headers */ = {
+		316A86345F2225C4E440255F08C76E49 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A0B5E68EBC870703EB1EA7FF7FEB8DA /* KVRefreshable-umbrella.h in Headers */,
+				B2A4D2B81B33804463F52DE25EC2147A /* Pods-KVRefreshable_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		59165433CCBCFB82879AF3D15CFCE01B /* Headers */ = {
+		7FB3CDC801AA6CCB89F030BA6376E8B9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09B6739C3C9EF0949FF34AEA50E25E82 /* Pods-KVRefreshable_Tests-umbrella.h in Headers */,
+				5F1E6AC12AC67000396CF985A464A928 /* KVRefreshable-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C72613FFCD3E041DA41E6BC25E8B57B5 /* Headers */ = {
+		A51E63D472FAE7ED39798BC728E0C1A2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65E85F3CE8AA9A036FC8D37566D998B8 /* Pods-KVRefreshable_Example-umbrella.h in Headers */,
+				6EC0A0D28EC86729466137FE4AF16296 /* Pods-KVRefreshable_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2FBD8066500CAC1D7742181F79B96FAE /* KVRefreshable */ = {
+		0AA8639979EC17B60E9A2E9CE0A93DD5 /* KVRefreshable */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CC9013E797D139B71F554D90961988F5 /* Build configuration list for PBXNativeTarget "KVRefreshable" */;
+			buildConfigurationList = 0C8EB1195B1C7D3EF17BB10410B7501C /* Build configuration list for PBXNativeTarget "KVRefreshable" */;
 			buildPhases = (
-				A62EAF0796414E2E09896F1BB19DA6CC /* Sources */,
-				ACD06FF27910B11C0CF121D5FECE474F /* Frameworks */,
-				4AF060885E044BF3F66D625F0F2029DB /* Headers */,
+				7FB3CDC801AA6CCB89F030BA6376E8B9 /* Headers */,
+				7B2BE4A6084893043E4E03F8D9B601C2 /* Sources */,
+				DD3E1C2A0BAF337B27D3A07CC28C89E5 /* Frameworks */,
+				E4CDD694E821A7D7B5F501E6DC7921C0 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -285,148 +285,233 @@
 			);
 			name = KVRefreshable;
 			productName = KVRefreshable;
-			productReference = 359A97AE05244075FF86F6AE0917C18B /* KVRefreshable.framework */;
+			productReference = 64CA1324AF77A7960C5C9592EB111FE1 /* KVRefreshable.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		58AB82972F32483F711DB8A1DAF37992 /* Pods-KVRefreshable_Example */ = {
+		28D779BFDB205E4C04548A616A0648B0 /* Pods-KVRefreshable_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EA0EEEA0E9410B12AA3D654F65770EED /* Build configuration list for PBXNativeTarget "Pods-KVRefreshable_Example" */;
+			buildConfigurationList = 6421FD4E4B54CF566FEE5E9FFB823C47 /* Build configuration list for PBXNativeTarget "Pods-KVRefreshable_Example" */;
 			buildPhases = (
-				8090990121C2F7E4E06D0C36EF0B0AB1 /* Sources */,
-				98BBBA3D5CBBC918BD50175419A3BF79 /* Frameworks */,
-				C72613FFCD3E041DA41E6BC25E8B57B5 /* Headers */,
+				316A86345F2225C4E440255F08C76E49 /* Headers */,
+				0900C9D445487755F609B0AB90856CEF /* Sources */,
+				40A7346157288215DD49F9611FB8D5AA /* Frameworks */,
+				DB3A6C4BDD0BAC20725AAD3B83FC937D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				053A38BEAC635C7D3E4833F3689FC685 /* PBXTargetDependency */,
+				8F913D36DF20BEA7690CA743D2B760A6 /* PBXTargetDependency */,
 			);
 			name = "Pods-KVRefreshable_Example";
 			productName = "Pods-KVRefreshable_Example";
-			productReference = 680D240526252A627ADEE79CC2801CDE /* Pods_KVRefreshable_Example.framework */;
+			productReference = 85D430BB350BE4FB597C8BE14548AD96 /* Pods_KVRefreshable_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		6036303EF2BED821039B9AE346C8E3FB /* Pods-KVRefreshable_Tests */ = {
+		FD6BD599182AC5BC5D3E14BDBFCFFA66 /* Pods-KVRefreshable_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9B811855934EA96CC5CFA80DB67696F0 /* Build configuration list for PBXNativeTarget "Pods-KVRefreshable_Tests" */;
+			buildConfigurationList = C67BBA75F78FAA938D532EA004BD54FE /* Build configuration list for PBXNativeTarget "Pods-KVRefreshable_Tests" */;
 			buildPhases = (
-				26541C6BB4A9926B5A71AD377613B222 /* Sources */,
-				873CCE8B4A672EA200514326679F612F /* Frameworks */,
-				59165433CCBCFB82879AF3D15CFCE01B /* Headers */,
+				A51E63D472FAE7ED39798BC728E0C1A2 /* Headers */,
+				63F89E63F8ACEB9353258DCDBBF24226 /* Sources */,
+				B671C728A30C966BE39456A00C0BC19B /* Frameworks */,
+				31C175894F9C0E7A72CED9D27D75B5CF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E8A1998EE9282B584EB958E5618872F0 /* PBXTargetDependency */,
 			);
 			name = "Pods-KVRefreshable_Tests";
 			productName = "Pods-KVRefreshable_Tests";
-			productReference = 5D5316350DF63914EFDB8F3B1BEFA9A1 /* Pods_KVRefreshable_Tests.framework */;
+			productReference = 83C129B09CBA7414688EB7BE30D670FC /* Pods_KVRefreshable_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 1020;
-				TargetAttributes = {
-					2FBD8066500CAC1D7742181F79B96FAE = {
-						LastSwiftMigration = 1020;
-					};
-				};
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = en;
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 3A8CF0464494CDBFEB86076D748877E1 /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 7D31D528652326B7EA44DBCE2A469CF4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2FBD8066500CAC1D7742181F79B96FAE /* KVRefreshable */,
-				58AB82972F32483F711DB8A1DAF37992 /* Pods-KVRefreshable_Example */,
-				6036303EF2BED821039B9AE346C8E3FB /* Pods-KVRefreshable_Tests */,
+				0AA8639979EC17B60E9A2E9CE0A93DD5 /* KVRefreshable */,
+				28D779BFDB205E4C04548A616A0648B0 /* Pods-KVRefreshable_Example */,
+				FD6BD599182AC5BC5D3E14BDBFCFFA66 /* Pods-KVRefreshable_Tests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		31C175894F9C0E7A72CED9D27D75B5CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB3A6C4BDD0BAC20725AAD3B83FC937D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4CDD694E821A7D7B5F501E6DC7921C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		26541C6BB4A9926B5A71AD377613B222 /* Sources */ = {
+		0900C9D445487755F609B0AB90856CEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67D8741B98AB87E9DF9ABF7DFF87C278 /* Pods-KVRefreshable_Tests-dummy.m in Sources */,
+				BF8E825B029CF3BDFB41829FC98D847B /* Pods-KVRefreshable_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8090990121C2F7E4E06D0C36EF0B0AB1 /* Sources */ = {
+		63F89E63F8ACEB9353258DCDBBF24226 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AD81901C6D05810FA14F93A02C7D967 /* Pods-KVRefreshable_Example-dummy.m in Sources */,
+				486397EB7DCEFCD47D602569E34FCAE3 /* Pods-KVRefreshable_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A62EAF0796414E2E09896F1BB19DA6CC /* Sources */ = {
+		7B2BE4A6084893043E4E03F8D9B601C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4087C5C1E4963B3001D7769 /* UIScrollView+KVPullToRefresh.swift in Sources */,
-				C4087C5B1E4963B3001D7769 /* UIScrollView+KVInfiniteScrolling.swift in Sources */,
-				C4087C5A1E4963B3001D7769 /* KVPullToRefreshView.swift in Sources */,
-				C4087C591E4963B3001D7769 /* KVPullToRefreshArrow.swift in Sources */,
-				C4087C571E4963B3001D7769 /* KVEnum.swift in Sources */,
-				C4087C581E4963B3001D7769 /* KVInfiniteScrollingView.swift in Sources */,
-				535AAC75CB643A5E2168254346925993 /* KVRefreshable-dummy.m in Sources */,
+				653961D43C2B7BE6C6385980FB48C33D /* KVEnum.swift in Sources */,
+				B849F5068555CE7C379AAE143C77230A /* KVInfiniteScrollingView.swift in Sources */,
+				2E563DEE6FD0C43EC8526BCACCB6E46A /* KVPullToRefreshArrow.swift in Sources */,
+				46097E970699EACF53578A46E0C05EF5 /* KVPullToRefreshView.swift in Sources */,
+				D84CF7C57B3569759269C9F149AA0166 /* KVRefreshable-dummy.m in Sources */,
+				A670D8D038BB0DF79C0375DF4ACE96B5 /* UIScrollView+KVInfiniteScrolling.swift in Sources */,
+				5FC9CB581C4BA9ADB987D8BB1C57479B /* UIScrollView+KVPullToRefresh.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		053A38BEAC635C7D3E4833F3689FC685 /* PBXTargetDependency */ = {
+		8F913D36DF20BEA7690CA743D2B760A6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = KVRefreshable;
-			target = 2FBD8066500CAC1D7742181F79B96FAE /* KVRefreshable */;
-			targetProxy = 9B66A2940CD75822F9A6896B34C39A2A /* PBXContainerItemProxy */;
+			target = 0AA8639979EC17B60E9A2E9CE0A93DD5 /* KVRefreshable */;
+			targetProxy = E39F625D40411A088969A134EAB0BBD3 /* PBXContainerItemProxy */;
+		};
+		E8A1998EE9282B584EB958E5618872F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-KVRefreshable_Example";
+			target = 28D779BFDB205E4C04548A616A0648B0 /* Pods-KVRefreshable_Example */;
+			targetProxy = 37FD780C05CD0697BAC0D450C4075EB2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		12A617F96BB01923414B2E0053B3D7DE /* Debug */ = {
+		05DF210AC65EBB0E593AAF976B2C2177 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 140DB95EA4B5E5CECF833497AF0C5BAD /* Pods-KVRefreshable_Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		1947735B51F35EC031E41400FB40AC82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF5765C327A0C2D0D507472A95F0575B /* Pods-KVRefreshable_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-KVRefreshable_Tests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-KVRefreshable_Example/Pods-KVRefreshable_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KVRefreshable_Tests/Pods-KVRefreshable_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MODULEMAP_FILE = "Target Support Files/Pods-KVRefreshable_Example/Pods-KVRefreshable_Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_KVRefreshable_Tests;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -435,126 +520,56 @@
 			};
 			name = Debug;
 		};
-		19E3E7E7E55CACD1D46E2C55EEB95C70 /* Release */ = {
+		24616058E110797A1B7C1BCA88B46B33 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9C1536C5C541D349AFC3070BA14D9C2 /* Pods-KVRefreshable_Tests.release.xcconfig */;
+			baseConfigurationReference = A81FDF2B699B8CDF79E00AE89D933C44 /* KVRefreshable.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-KVRefreshable_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KVRefreshable_Tests/Pods-KVRefreshable_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_KVRefreshable_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		239A5E8AD5614E8C65B0FD7D4B9354DA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC0BA0D9C0078AF48438EA939E68A00A /* Pods-KVRefreshable_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-KVRefreshable_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KVRefreshable_Example/Pods-KVRefreshable_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_KVRefreshable_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		510FA7F9C10D26854B5894840CA48A29 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A4C7B731D066292CD0E927AB647D475 /* KVRefreshable.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/KVRefreshable/KVRefreshable-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KVRefreshable/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/KVRefreshable/KVRefreshable-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/KVRefreshable/KVRefreshable.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_MODULE_NAME = KVRefreshable;
 				PRODUCT_NAME = KVRefreshable;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
+		421ECB1396280A8D83853C3DDBED1700 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -562,71 +577,18 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -635,85 +597,116 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		EBC7327ABC116A2FE2E074B630A146B0 /* Debug */ = {
+		866774BD57EF380B2E3725DFD29784F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB02EA9549C1B64B36147BC276FCEF41 /* Pods-KVRefreshable_Example.debug.xcconfig */;
+			baseConfigurationReference = 079F42651F61BA35B6F22B899B8C3375 /* Pods-KVRefreshable_Tests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-KVRefreshable_Example/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-KVRefreshable_Tests/Pods-KVRefreshable_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KVRefreshable_Example/Pods-KVRefreshable_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MODULEMAP_FILE = "Target Support Files/Pods-KVRefreshable_Tests/Pods-KVRefreshable_Tests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_KVRefreshable_Example;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		F62D08CEC04DD05B69A3C22B0AD903F6 /* Debug */ = {
+		CD63D8A5888B136D080BC79AC535CF7F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A4C7B731D066292CD0E927AB647D475 /* KVRefreshable.xcconfig */;
+			baseConfigurationReference = 16142C86FC4D25B331556B06FFA03E72 /* Pods-KVRefreshable_Tests.release.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-KVRefreshable_Tests/Pods-KVRefreshable_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KVRefreshable_Tests/Pods-KVRefreshable_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EBC3289FF8C7508AC9B86803F3C57567 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A81FDF2B699B8CDF79E00AE89D933C44 /* KVRefreshable.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/KVRefreshable/KVRefreshable-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KVRefreshable/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/KVRefreshable/KVRefreshable-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/KVRefreshable/KVRefreshable.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_MODULE_NAME = KVRefreshable;
 				PRODUCT_NAME = KVRefreshable;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -721,46 +714,80 @@
 			};
 			name = Debug;
 		};
+		F47BD5B4D8229FCE468FC8CB26171EB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 176E346C3B0E66408F56518337D50AE6 /* Pods-KVRefreshable_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KVRefreshable_Example/Pods-KVRefreshable_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KVRefreshable_Example/Pods-KVRefreshable_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		0C8EB1195B1C7D3EF17BB10410B7501C /* Build configuration list for PBXNativeTarget "KVRefreshable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
-				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+				EBC3289FF8C7508AC9B86803F3C57567 /* Debug */,
+				24616058E110797A1B7C1BCA88B46B33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9B811855934EA96CC5CFA80DB67696F0 /* Build configuration list for PBXNativeTarget "Pods-KVRefreshable_Tests" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				12A617F96BB01923414B2E0053B3D7DE /* Debug */,
-				19E3E7E7E55CACD1D46E2C55EEB95C70 /* Release */,
+				421ECB1396280A8D83853C3DDBED1700 /* Debug */,
+				05DF210AC65EBB0E593AAF976B2C2177 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CC9013E797D139B71F554D90961988F5 /* Build configuration list for PBXNativeTarget "KVRefreshable" */ = {
+		6421FD4E4B54CF566FEE5E9FFB823C47 /* Build configuration list for PBXNativeTarget "Pods-KVRefreshable_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F62D08CEC04DD05B69A3C22B0AD903F6 /* Debug */,
-				510FA7F9C10D26854B5894840CA48A29 /* Release */,
+				1947735B51F35EC031E41400FB40AC82 /* Debug */,
+				F47BD5B4D8229FCE468FC8CB26171EB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EA0EEEA0E9410B12AA3D654F65770EED /* Build configuration list for PBXNativeTarget "Pods-KVRefreshable_Example" */ = {
+		C67BBA75F78FAA938D532EA004BD54FE /* Build configuration list for PBXNativeTarget "Pods-KVRefreshable_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EBC7327ABC116A2FE2E074B630A146B0 /* Debug */,
-				239A5E8AD5614E8C65B0FD7D4B9354DA /* Release */,
+				866774BD57EF380B2E3725DFD29784F0 /* Debug */,
+				CD63D8A5888B136D080BC79AC535CF7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

@@ -1,16 +1,16 @@
 PODS:
-  - KVRefreshable (0.1)
+  - KVRefreshable (2.0.0)
 
 DEPENDENCIES:
   - KVRefreshable (from `../`)
 
 EXTERNAL SOURCES:
   KVRefreshable:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  KVRefreshable: 84830a7dd33c098d719e4b2dc2910e2dd019ef4c
+  KVRefreshable: 477f58cc8882e34f4c2e5848951c5ae5618aa7c3
 
 PODFILE CHECKSUM: b6b71b26534d486d320c30e1ca971f305dafbcd4
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.6.1

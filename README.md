@@ -12,7 +12,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Requirements
 
 * iOS 8.0+
-* Swift 3.0
+* Swift 5.0
 
 ## Installation
 
@@ -20,8 +20,8 @@ KVRefreshable is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-# For Swift 4.2
-pod 'KVRefreshable', '~> 1.9'
+# For Swift 5.0
+pod 'KVRefreshable', '~> 2.0.0'
 ```
 
 ## Usage
