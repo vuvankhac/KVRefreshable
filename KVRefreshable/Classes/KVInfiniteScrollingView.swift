@@ -87,7 +87,9 @@ public class KVInfiniteScrollingView: UIView {
             }
             
             if previousState == .triggered && state == .loading && enabled && infiniteScrollingHandler != nil {
-                infiniteScrollingHandler?()
+                if let scrollView = scrollView, scrollView.showsInfiniteScrolling {
+                    infiniteScrollingHandler?()
+                }
             }
         }
     }
