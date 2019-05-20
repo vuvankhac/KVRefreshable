@@ -58,15 +58,15 @@ extension UIScrollView {
         
         set {
             if newValue {
-                infiniteScrollingView.layer.opacity = 1.0
+                infiniteScrollingView.alpha = 1.0
                 addObserver(infiniteScrollingView, forKeyPath: "contentOffset", options: .new, context: nil)
                 addObserver(infiniteScrollingView, forKeyPath: "contentSize", options: .new, context: nil)
                 infiniteScrollingView.setScrollViewContentInsetForInfiniteScrolling()
                 infiniteScrollingView.observing = true
                 infiniteScrollingView.setNeedsLayout()
             } else {
+                infiniteScrollingView.alpha = 0
                 if infiniteScrollingView.observing {
-                    infiniteScrollingView.layer.opacity = 0
                     removeObserver(infiniteScrollingView, forKeyPath: "contentOffset")
                     removeObserver(infiniteScrollingView, forKeyPath: "contentSize")
                     infiniteScrollingView.resetScrollViewContentInset()
